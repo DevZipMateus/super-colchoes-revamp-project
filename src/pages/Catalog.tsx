@@ -126,6 +126,48 @@ const Catalog = () => {
       name: "Colchão Hauzestern Showroom",
       description: "Colchão premium da linha Hauzestern com design exclusivo para showroom.",
       image: "/lovable-uploads/774777ab-fc8e-4a4e-b795-c552d30e679f.png"
+    },
+    {
+      id: 21,
+      name: "Colchão de Espuma Tradicional",
+      description: "Colchão de espuma de alta densidade com acabamento tradicional em cinza.",
+      image: "/lovable-uploads/86827002-069e-4585-b304-2a37bef41c73.png"
+    },
+    {
+      id: 22,
+      name: "Conjunto Box com Cama Auxiliar",
+      description: "Conjunto box completo com cama auxiliar deslizante, ideal para quartos de hóspedes.",
+      image: "/lovable-uploads/ad8fbd13-ddaa-440a-8b9d-8cc4cecf8990.png"
+    },
+    {
+      id: 23,
+      name: "Sofá-Cama Retrátil",
+      description: "Sofá-cama em couro sintético com sistema retrátil e colchão confortável.",
+      image: "/lovable-uploads/86de7038-061a-4374-b659-771e4789d4fc.png"
+    },
+    {
+      id: 24,
+      name: "Box Baú Branco Compacto",
+      description: "Base box baú em branco com sistema de abertura facilitada para armazenamento.",
+      image: "/lovable-uploads/a7bc33a7-a2aa-40fe-a405-c97e01e87fba.png"
+    },
+    {
+      id: 25,
+      name: "Box Baú Escuro com Sistema Hidráulico",
+      description: "Box baú em tecido escuro com sistema hidráulico para maior durabilidade e facilidade de uso.",
+      image: "/lovable-uploads/5427d1b7-3879-4911-acd5-92df35aadd35.png"
+    },
+    {
+      id: 26,
+      name: "Poltrona Reclinável Bege",
+      description: "Poltrona reclinável em couro sintético bege com mecanismo de relaxamento avançado.",
+      image: "/lovable-uploads/acfcb05f-00a7-4b08-a338-ca8874b927ad.png"
+    },
+    {
+      id: 27,
+      name: "Colchão de Molas Ensacadas Individuais Premium",
+      description: "Colchão branco com sistema de molas ensacadas individuais e tecnologia avançada de conforto.",
+      image: "/lovable-uploads/a6d06699-4209-4b0b-b13c-7ba9664879f2.png"
     }
   ];
 
