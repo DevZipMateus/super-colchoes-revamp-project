@@ -10,6 +10,13 @@ const Header = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  const handleWhatsAppClick = () => {
+    const phoneNumber = "5555991630055";
+    const message = "Olá! Gostaria de saber mais sobre os colchões da SuperColchões.";
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+    window.open(whatsappUrl, '_blank');
+  };
+
   return (
     <header className="bg-white shadow-lg sticky top-0 z-50">
       {/* Top bar */}
@@ -51,7 +58,7 @@ const Header = () => {
             <a href="#produtos" className="text-gray-700 hover:text-red-600 transition-colors font-medium">Produtos</a>
             <a href="#sobre" className="text-gray-700 hover:text-red-600 transition-colors font-medium">Sobre</a>
             <a href="#contato" className="text-gray-700 hover:text-red-600 transition-colors font-medium">Contato</a>
-            <Button className="bg-red-600 hover:bg-red-700">
+            <Button className="bg-red-600 hover:bg-red-700" onClick={handleWhatsAppClick}>
               Fale Conosco
             </Button>
           </nav>
@@ -73,7 +80,7 @@ const Header = () => {
               <a href="#produtos" className="text-gray-700 hover:text-red-600 transition-colors font-medium py-2">Produtos</a>
               <a href="#sobre" className="text-gray-700 hover:text-red-600 transition-colors font-medium py-2">Sobre</a>
               <a href="#contato" className="text-gray-700 hover:text-red-600 transition-colors font-medium py-2">Contato</a>
-              <Button className="bg-red-600 hover:bg-red-700 w-full mt-4">
+              <Button className="bg-red-600 hover:bg-red-700 w-full mt-4" onClick={handleWhatsAppClick}>
                 Fale Conosco
               </Button>
             </div>

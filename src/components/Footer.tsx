@@ -2,6 +2,13 @@
 import { Facebook, Instagram, Youtube, Phone, Mail, MapPin } from 'lucide-react';
 
 const Footer = () => {
+  const handleWhatsAppClick = () => {
+    const phoneNumber = "5555991630055";
+    const message = "Olá! Gostaria de saber mais sobre os colchões da SuperColchões.";
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+    window.open(whatsappUrl, '_blank');
+  };
+
   return (
     <footer className="bg-gray-900 text-white">
       <div className="container mx-auto px-4 py-16">
@@ -43,6 +50,16 @@ const Footer = () => {
               >
                 <Youtube className="w-5 h-5" />
               </a>
+              <button 
+                onClick={handleWhatsAppClick}
+                className="w-10 h-10 bg-green-500 rounded-full flex items-center justify-center hover:bg-green-600 transition-colors"
+              >
+                <img 
+                  src="/lovable-uploads/95170b76-0f76-439e-9a3e-8f066ecf1a0b.png" 
+                  alt="WhatsApp" 
+                  className="w-6 h-6"
+                />
+              </button>
             </div>
           </div>
 
@@ -74,15 +91,19 @@ const Footer = () => {
           <div className="space-y-4">
             <h4 className="text-lg font-bold mb-4">Contato</h4>
             <div className="space-y-3">
-              <div className="flex items-center space-x-3">
+              <div className="flex items-center space-x-3 cursor-pointer hover:text-red-400 transition-colors" onClick={handleWhatsAppClick}>
                 <Phone className="w-5 h-5 text-red-400" />
                 <span className="text-gray-300">(55) 3221-8035</span>
               </div>
-              <div className="flex items-center space-x-3">
-                <Phone className="w-5 h-5 text-green-400" />
+              <div className="flex items-center space-x-3 cursor-pointer hover:text-green-400 transition-colors" onClick={handleWhatsAppClick}>
+                <img 
+                  src="/lovable-uploads/95170b76-0f76-439e-9a3e-8f066ecf1a0b.png" 
+                  alt="WhatsApp" 
+                  className="w-5 h-5"
+                />
                 <span className="text-gray-300">(55) 99163-0055</span>
               </div>
-              <div className="flex items-center space-x-3">
+              <div className="flex items-center space-x-3 cursor-pointer hover:text-red-400 transition-colors" onClick={handleWhatsAppClick}>
                 <Mail className="w-5 h-5 text-red-400" />
                 <span className="text-gray-300">supercolchoes@yahoo.com.br</span>
               </div>
