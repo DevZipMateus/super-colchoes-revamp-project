@@ -17,7 +17,7 @@ const FloatingWhatsApp = () => {
       aria-label="Falar no WhatsApp"
     >
       <img 
-        src="/lovable-uploads/95170b76-0f76-439e-9a3e-8f066ecf1a0b.png" 
+        src="/lovable-uploads/ab271b32-cd91-484c-97ce-567483a1d65b.png" 
         alt="WhatsApp" 
         className="w-10 h-10"
       />

@@ -64,7 +64,7 @@ const Header = () => {
             <a href="#sobre" className="text-gray-700 hover:text-red-600 transition-colors font-medium text-sm xl:text-base">Sobre</a>
             <a href="#contato" className="text-gray-700 hover:text-red-600 transition-colors font-medium text-sm xl:text-base">Contato</a>
             <Button className="bg-red-600 hover:bg-red-700 text-sm xl:text-base px-4 xl:px-6 flex items-center" onClick={handleWhatsAppClick}>
-              <img src="/lovable-uploads/95170b76-0f76-439e-9a3e-8f066ecf1a0b.png" alt="WhatsApp" className="w-4 h-4 mr-2" />
+              <img src="/lovable-uploads/ab271b32-cd91-484c-97ce-567483a1d65b.png" alt="WhatsApp" className="w-4 h-4 mr-2" />
               Fale Conosco
             </Button>
           </nav>
@@ -88,7 +88,7 @@ const Header = () => {
               <a href="#sobre" className="text-gray-700 hover:text-red-600 transition-colors font-medium py-2 text-sm sm:text-base" onClick={toggleMenu}>Sobre</a>
               <a href="#contato" className="text-gray-700 hover:text-red-600 transition-colors font-medium py-2 text-sm sm:text-base" onClick={toggleMenu}>Contato</a>
               <Button className="bg-red-600 hover:bg-red-700 w-full mt-4 text-sm sm:text-base flex items-center justify-center" onClick={handleWhatsAppClick}>
-                <img src="/lovable-uploads/95170b76-0f76-439e-9a3e-8f066ecf1a0b.png" alt="WhatsApp" className="w-4 h-4 mr-2" />
+                <img src="/lovable-uploads/ab271b32-cd91-484c-97ce-567483a1d65b.png" alt="WhatsApp" className="w-4 h-4 mr-2" />
                 Fale Conosco
               </Button>
             </div>

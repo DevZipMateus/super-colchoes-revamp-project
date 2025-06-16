@@ -65,7 +65,7 @@ const ContactSection = () => {
           <Card className="shadow-xl border-0">
             <CardHeader>
               <CardTitle className="text-2xl text-gray-900 flex items-center">
-                <img src="/lovable-uploads/95170b76-0f76-439e-9a3e-8f066ecf1a0b.png" alt="WhatsApp" className="w-6 h-6 mr-2" />
+                <img src="/lovable-uploads/ab271b32-cd91-484c-97ce-567483a1d65b.png" alt="WhatsApp" className="w-6 h-6 mr-2" />
                 Solicite um Orçamento
               </CardTitle>
               <p className="text-gray-600">
@@ -127,7 +127,7 @@ const ContactSection = () => {
                   <div className="flex items-start space-x-4">
                     <div className={`w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0 ${info.highlight ? 'bg-green-500' : 'bg-green-100'}`}>
                       {info.isWhatsApp ? (
-                        <img src="/lovable-uploads/95170b76-0f76-439e-9a3e-8f066ecf1a0b.png" alt="WhatsApp" className="w-6 h-6" />
+                        <img src="/lovable-uploads/ab271b32-cd91-484c-97ce-567483a1d65b.png" alt="WhatsApp" className="w-6 h-6" />
                       ) : (
                         <info.icon className={`w-6 h-6 ${info.highlight ? 'text-white' : 'text-green-600'}`} />
                       )}
@@ -149,7 +149,7 @@ const ContactSection = () => {
               <CardContent className="p-6">
                 <div className="text-center space-y-4">
                   <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto">
-                    <img src="/lovable-uploads/95170b76-0f76-439e-9a3e-8f066ecf1a0b.png" alt="WhatsApp" className="w-8 h-8" />
+                    <img src="/lovable-uploads/ab271b32-cd91-484c-97ce-567483a1d65b.png" alt="WhatsApp" className="w-8 h-8" />
                   </div>
                   <div>
                     <h3 className="font-bold text-xl mb-2">Atendimento WhatsApp</h3>
@@ -158,7 +158,7 @@ const ContactSection = () => {
                       Atendimento rápido e personalizado!
                     </p>
                     <Button className="bg-white text-green-600 hover:bg-gray-100 flex items-center">
-                      <img src="/lovable-uploads/95170b76-0f76-439e-9a3e-8f066ecf1a0b.png" alt="WhatsApp" className="w-4 h-4 mr-2" />
+                      <img src="/lovable-uploads/ab271b32-cd91-484c-97ce-567483a1d65b.png" alt="WhatsApp" className="w-4 h-4 mr-2" />
                       Chamar no WhatsApp
                     </Button>
                   </div>

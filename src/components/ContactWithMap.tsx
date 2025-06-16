@@ -60,7 +60,7 @@ const ContactWithMap = () => {
           <Card className="shadow-xl border-0">
             <CardHeader>
               <CardTitle className="text-xl sm:text-2xl text-gray-900 flex items-center">
-                <img src="/lovable-uploads/95170b76-0f76-439e-9a3e-8f066ecf1a0b.png" alt="WhatsApp" className="w-5 sm:w-6 h-5 sm:h-6 mr-2" />
+                <img src="/lovable-uploads/ab271b32-cd91-484c-97ce-567483a1d65b.png" alt="WhatsApp" className="w-5 sm:w-6 h-5 sm:h-6 mr-2" />
                 Solicite um Orçamento
               </CardTitle>
               <p className="text-gray-600 text-sm sm:text-base">
@@ -112,7 +112,7 @@ const ContactWithMap = () => {
             <Card className="shadow-lg border-0 bg-green-600 text-white hover:shadow-xl transition-shadow cursor-pointer p-4 sm:p-6" onClick={handleWhatsAppClick}>
               <div className="text-center">
                 <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-4">
-                  <img src="/lovable-uploads/95170b76-0f76-439e-9a3e-8f066ecf1a0b.png" alt="WhatsApp" className="w-8 h-8" />
+                  <img src="/lovable-uploads/ab271b32-cd91-484c-97ce-567483a1d65b.png" alt="WhatsApp" className="w-8 h-8" />
                 </div>
                 <h3 className="text-lg sm:text-xl font-bold mb-2">Atendimento via WhatsApp</h3>
                 <p className="text-sm sm:text-base opacity-90">Clique para conversar agora mesmo!</p>

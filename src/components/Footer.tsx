@@ -31,7 +31,7 @@ const Footer = () => {
                 <Youtube className="w-5 h-5" />
               </a>
               <button onClick={handleWhatsAppClick} className="w-10 h-10 bg-green-500 rounded-full flex items-center justify-center hover:bg-green-600 transition-colors">
-                <img src="/lovable-uploads/95170b76-0f76-439e-9a3e-8f066ecf1a0b.png" alt="WhatsApp" className="w-6 h-6" />
+                <img src="/lovable-uploads/ab271b32-cd91-484c-97ce-567483a1d65b.png" alt="WhatsApp" className="w-6 h-6" />
               </button>
             </div>
           </div>
@@ -60,7 +60,7 @@ const Footer = () => {
                 <span className="text-gray-300">(55) 3221-8035</span>
               </div>
               <div className="flex items-center space-x-3 cursor-pointer hover:text-green-400 transition-colors" onClick={handleWhatsAppClick}>
-                <img src="/lovable-uploads/95170b76-0f76-439e-9a3e-8f066ecf1a0b.png" alt="WhatsApp" className="w-5 h-5" />
+                <img src="/lovable-uploads/ab271b32-cd91-484c-97ce-567483a1d65b.png" alt="WhatsApp" className="w-5 h-5" />
                 <span className="text-gray-300">(55) 99163-0055</span>
               </div>
               <div className="flex items-center space-x-3 cursor-pointer hover:text-red-400 transition-colors" onClick={handleWhatsAppClick}>

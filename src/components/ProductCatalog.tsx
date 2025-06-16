@@ -1,4 +1,3 @@
-
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardFooter, CardHeader } from '@/components/ui/card';
 import { 
@@ -236,7 +235,7 @@ const ProductCatalog = () => {
                         className="w-full bg-green-600 hover:bg-green-700"
                         onClick={() => handleWhatsAppClick(product.name)}
                       >
-                        <MessageCircle className="w-3 h-3 mr-2" />
+                        <img src="/lovable-uploads/ab271b32-cd91-484c-97ce-567483a1d65b.png" alt="WhatsApp" className="w-3 h-3 mr-2" />
                         Solicitar Orçamento
                       </Button>
                     </CardFooter>
@@ -279,7 +278,7 @@ const ProductCatalog = () => {
                   className="w-full bg-green-600 hover:bg-green-700"
                   onClick={() => handleWhatsAppClick(product.name)}
                 >
-                  <MessageCircle className="w-3 h-3 mr-2" />
+                  <img src="/lovable-uploads/ab271b32-cd91-484c-97ce-567483a1d65b.png" alt="WhatsApp" className="w-3 h-3 mr-2" />
                   Solicitar Orçamento
                 </Button>
               </CardFooter>
