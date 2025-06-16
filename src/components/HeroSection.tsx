@@ -15,8 +15,8 @@ const HeroSection = () => {
       backgroundPosition: 'center center'
     }} />
       
-      {/* White overlay for better text readability */}
-      <div className="absolute inset-0 bg-white opacity-10" />
+      {/* Black overlay for better text readability */}
+      <div className="absolute inset-0 bg-black opacity-10" />
       
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 py-8 sm:py-12 lg:py-20 bg-[#010101]/[0.43]">
