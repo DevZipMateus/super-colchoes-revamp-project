@@ -1,21 +1,15 @@
 
 import Header from '@/components/Header';
-import HeroSection from '@/components/HeroSection';
-import AboutSection from '@/components/AboutSection';
 import ProductsSection from '@/components/ProductsSection';
-import ContactWithMap from '@/components/ContactWithMap';
 import Footer from '@/components/Footer';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
 
-const Index = () => {
+const Products = () => {
   return (
     <div className="min-h-screen">
       <Header />
       <main>
-        <HeroSection />
-        <AboutSection />
         <ProductsSection />
-        <ContactWithMap />
       </main>
       <Footer />
       <FloatingWhatsApp />
@@ -23,4 +17,4 @@ const Index = () => {
   );
 };
 
-export default Index;
+export default Products;
