@@ -46,16 +46,7 @@ const Footer = () => {
           </div>
 
           {/* Services */}
-          <div className="space-y-4">
-            <h4 className="text-lg font-bold mb-4">Serviços</h4>
-            <ul className="space-y-3">
-              <li><a href="#" className="text-gray-300 hover:text-red-400 transition-colors">Entrega Grátis</a></li>
-              <li><a href="#" className="text-gray-300 hover:text-red-400 transition-colors">Montagem</a></li>
-              <li><a href="#" className="text-gray-300 hover:text-red-400 transition-colors">Garantia Estendida</a></li>
-              <li><a href="#" className="text-gray-300 hover:text-red-400 transition-colors">Troca Facilitada</a></li>
-              <li><a href="#" className="text-gray-300 hover:text-red-400 transition-colors">Financiamento</a></li>
-            </ul>
-          </div>
+          
 
           {/* Contact */}
           <div className="space-y-4">
