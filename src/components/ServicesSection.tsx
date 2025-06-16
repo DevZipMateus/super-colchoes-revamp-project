@@ -1,4 +1,3 @@
-
 import { Clock, Home, Ruler } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 
@@ -32,19 +31,13 @@ const ServicesSection = () => {
             Nossos <span className="text-red-600">Serviços</span>
           </h2>
           
-          {/* Selo de 38 anos */}
+          {/* Imagem de 38 anos de credibilidade */}
           <div className="flex justify-center mb-8">
-            <div className="bg-gradient-to-r from-red-600 to-red-700 text-white px-8 py-4 rounded-full shadow-lg">
-              <div className="flex items-center space-x-3">
-                <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center">
-                  <span className="text-xl font-bold">38</span>
-                </div>
-                <div className="text-left">
-                  <div className="text-lg font-bold">ANOS</div>
-                  <div className="text-sm">de experiência</div>
-                </div>
-              </div>
-            </div>
+            <img 
+              src="/lovable-uploads/ada8f457-ba71-42c5-b7cb-61d0bb50b001.png" 
+              alt="38 Anos de Credibilidade - SuperColchões" 
+              className="h-32 w-auto object-contain"
+            />
           </div>
           
           <p className="text-xl text-gray-600 max-w-4xl mx-auto">
