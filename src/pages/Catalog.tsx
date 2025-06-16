@@ -1,4 +1,3 @@
-
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardFooter, CardHeader } from '@/components/ui/card';
 import { MessageCircle, ArrowLeft } from 'lucide-react';
@@ -67,6 +66,66 @@ const Catalog = () => {
       name: "Conjunto Castor Completo",
       description: "Conjunto completo da marca Castor com colchão, travesseiros e acessórios coordenados.",
       image: "/lovable-uploads/46370e64-de6f-4bfe-b37c-27aa129eb636.png"
+    },
+    {
+      id: 11,
+      name: "Colchão de Molas Ensacadas Individual - Modelo Branco",
+      description: "Colchão com sistema de molas ensacadas individuais para máximo conforto e durabilidade.",
+      image: "/lovable-uploads/f4a70ba3-652e-4872-b100-37b5db3ff1cb.png"
+    },
+    {
+      id: 12,
+      name: "Colchão de Molas Ensacadas Individual - Modelo Preto",
+      description: "Colchão com molas ensacadas individuais em design elegante preto e branco.",
+      image: "/lovable-uploads/8b1ca3c8-d048-435f-b55e-b77d646a19c2.png"
+    },
+    {
+      id: 13,
+      name: "Colchão de Molas Ensacadas Individual - Design Moderno",
+      description: "Colchão com tecnologia de molas ensacadas para quarto com design contemporâneo.",
+      image: "/lovable-uploads/63ff3097-9a4d-4789-9c3d-3a63cd97ee90.png"
+    },
+    {
+      id: 14,
+      name: "Poltrona Reclinável de Couro",
+      description: "Poltrona reclinável em couro sintético com sistema de relaxamento total.",
+      image: "/lovable-uploads/4e39cad8-4d1c-4609-bf1e-06a1ffec10e4.png"
+    },
+    {
+      id: 15,
+      name: "Travesseiro Real Látex",
+      description: "Travesseiro em látex natural com espuma de látex para máximo conforto cervical.",
+      image: "/lovable-uploads/7c24a28f-f6f9-4574-b21f-8481c9a7c407.png"
+    },
+    {
+      id: 16,
+      name: "Colchão Branco Premium",
+      description: "Colchão em tecido branco com design clean e materiais de alta qualidade.",
+      image: "/lovable-uploads/83dc868b-773d-47af-855b-d83f477de236.png"
+    },
+    {
+      id: 17,
+      name: "Colchão Decorativo com Estampa",
+      description: "Colchão com estampa decorativa elegante, ideal para quartos sofisticados.",
+      image: "/lovable-uploads/abddb981-a25c-4b71-aff7-af9ad8cc86c9.png"
+    },
+    {
+      id: 18,
+      name: "Colchão Hauzestern Premium",
+      description: "Colchão da marca Hauzestern com tecnologia avançada e design moderno.",
+      image: "/lovable-uploads/0683a887-4f66-4c1a-b2c0-55dc01ce3bd0.png"
+    },
+    {
+      id: 19,
+      name: "Colchão com Padrão Decorativo",
+      description: "Colchão com belo padrão decorativo em relevo, combinando estilo e conforto.",
+      image: "/lovable-uploads/c753105f-cf2b-464a-8a76-695055f94042.png"
+    },
+    {
+      id: 20,
+      name: "Colchão Hauzestern Showroom",
+      description: "Colchão premium da linha Hauzestern com design exclusivo para showroom.",
+      image: "/lovable-uploads/774777ab-fc8e-4a4e-b795-c552d30e679f.png"
     }
   ];
 
