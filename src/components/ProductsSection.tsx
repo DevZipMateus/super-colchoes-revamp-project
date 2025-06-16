@@ -1,140 +1,127 @@
 
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
-import { Badge } from '@/components/ui/badge';
-import { Star, Heart, ShoppingCart } from 'lucide-react';
+import { Star, ShoppingCart } from 'lucide-react';
 
 const ProductsSection = () => {
-  const products = [
+  const brands = [
+    "Ortobom", "Castor", "Gazin", "Herval", "King Koil", 
+    "Sealy", "Simmons", "Serta", "Tempur", "Probel"
+  ];
+
+  const categories = [
     {
-      id: 1,
-      name: "Colchão Ortopédico Premium",
-      price: "R$ 1.299,00",
-      originalPrice: "R$ 2.598,00",
-      rating: 4.9,
-      reviews: 156,
-      image: "premium",
-      features: ["Espuma NASA", "Anti-ácaro", "Garantia 10 anos"],
-      bestseller: true
+      name: "Colchões Solteiro",
+      description: "Ideais para quartos infantis e de hóspedes",
+      priceRange: "A partir de R$ 299",
+      image: "solteiro"
     },
     {
-      id: 2,
-      name: "Colchão Memory Foam Luxo",
-      price: "R$ 1.899,00",
-      originalPrice: "R$ 3.798,00",
-      rating: 4.8,
-      reviews: 203,
-      image: "memory",
-      features: ["Memory Foam", "Regulagem térmica", "Base eucalipto"],
-      bestseller: false
+      name: "Colchões Casal",
+      description: "Conforto para o casal, diversas tecnologias",
+      priceRange: "A partir de R$ 599",
+      image: "casal"
     },
     {
-      id: 3,
-      name: "Colchão Pocket Spring Elite",
-      price: "R$ 2.499,00",
-      originalPrice: "R$ 4.998,00",
-      rating: 4.9,
-      reviews: 89,
-      image: "pocket",
-      features: ["Molas ensacadas", "7 zonas de conforto", "Tecido bamboo"],
-      bestseller: false
+      name: "Colchões Queen",
+      description: "Mais espaço e conforto para o seu descanso",
+      priceRange: "A partir de R$ 899",
+      image: "queen"
     },
     {
-      id: 4,
-      name: "Colchão Casal Econômico",
-      price: "R$ 699,00",
-      originalPrice: "R$ 1.398,00",
-      rating: 4.6,
-      reviews: 324,
-      image: "economico",
-      features: ["D33 Alta qualidade", "Anti-fungos", "Garantia 5 anos"],
-      bestseller: false
+      name: "Colchões King",
+      description: "O máximo em espaço e luxo",
+      priceRange: "A partir de R$ 1.299",
+      image: "king"
+    },
+    {
+      name: "Colchões Ortopédicos",
+      description: "Tratamento para coluna e articulações",
+      priceRange: "A partir de R$ 799",
+      image: "ortopedico"
+    },
+    {
+      name: "Colchões de Molas",
+      description: "Tecnologia de molas ensacadas e bonnell",
+      priceRange: "A partir de R$ 699",
+      image: "molas"
     }
   ];
 
   return (
-    <section id="produtos" className="py-16 lg:py-24 bg-white">
+    <section className="py-16 lg:py-24 bg-gray-50">
       <div className="container mx-auto px-4">
         <div className="text-center space-y-4 mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold text-gray-900">
             Nossos <span className="text-red-600">Produtos</span>
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Descubra nossa linha completa de colchões desenvolvidos com tecnologia de ponta para garantir o melhor descanso.
+          <p className="text-xl text-gray-600 max-w-4xl mx-auto">
+            Trabalhamos com as melhores marcas do mercado nacional e internacional. 
+            Mais de 500 modelos em estoque para pronta entrega.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {products.map((product) => (
-            <Card key={product.id} className="group hover:shadow-xl transition-all duration-300 border-0 shadow-lg">
-              <CardHeader className="p-0 relative">
-                <div className="bg-gradient-to-br from-green-100 to-green-200 h-48 rounded-t-lg flex items-center justify-center relative overflow-hidden">
-                  <div className="text-center space-y-2">
-                    <div className="w-16 h-16 bg-red-600 rounded-full flex items-center justify-center mx-auto group-hover:scale-110 transition-transform">
-                      <span className="text-white text-lg font-bold">SC</span>
+        {/* Marcas que vendemos */}
+        <div className="mb-16">
+          <h3 className="text-2xl font-bold text-center text-gray-900 mb-8">Marcas que Trabalhamos</h3>
+          <div className="grid grid-cols-2 md:grid-cols-5 gap-6">
+            {brands.map((brand, index) => (
+              <div key={index} className="bg-white rounded-lg shadow-md p-6 text-center hover:shadow-lg transition-shadow">
+                {/* Espaço para logo da marca */}
+                <div className="bg-gray-100 h-16 rounded-lg flex items-center justify-center mb-3">
+                  <span className="text-gray-600 font-bold text-sm">{brand}</span>
+                </div>
+                <p className="text-sm font-medium text-gray-800">{brand}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Categorias de produtos */}
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+          {categories.map((category, index) => (
+            <Card key={index} className="hover:shadow-xl transition-shadow border-0 shadow-lg">
+              <CardHeader className="p-0">
+                {/* Espaço para imagem da categoria */}
+                <div className="bg-gradient-to-br from-green-100 to-green-200 h-48 rounded-t-lg flex items-center justify-center">
+                  <div className="text-center">
+                    <div className="w-16 h-16 bg-red-600 rounded-full flex items-center justify-center mx-auto mb-2">
+                      <span className="text-white text-lg font-bold">IMG</span>
                     </div>
-                    <p className="text-green-700 font-medium">{product.image}</p>
+                    <p className="text-green-700 font-medium">{category.image}</p>
                   </div>
-                  {product.bestseller && (
-                    <Badge className="absolute top-2 left-2 bg-yellow-400 text-yellow-900 hover:bg-yellow-500">
-                      Mais Vendido
-                    </Badge>
-                  )}
-                  <button className="absolute top-2 right-2 p-2 bg-white rounded-full shadow-md hover:bg-red-50 transition-colors">
-                    <Heart className="w-4 h-4 text-gray-600 hover:text-red-500" />
-                  </button>
                 </div>
               </CardHeader>
               
               <CardContent className="p-6 space-y-4">
-                <div>
-                  <CardTitle className="text-lg font-bold text-gray-900 group-hover:text-red-600 transition-colors">
-                    {product.name}
-                  </CardTitle>
-                  <div className="flex items-center space-x-2 mt-2">
-                    <div className="flex">
-                      {[...Array(5)].map((_, i) => (
-                        <Star 
-                          key={i} 
-                          className={`w-4 h-4 ${i < Math.floor(product.rating) ? 'fill-yellow-400 text-yellow-400' : 'text-gray-300'}`}
-                        />
-                      ))}
-                    </div>
-                    <span className="text-sm text-gray-600">({product.reviews})</span>
+                <CardTitle className="text-xl font-bold text-gray-900">
+                  {category.name}
+                </CardTitle>
+                <p className="text-gray-600">{category.description}</p>
+                <div className="flex items-center space-x-2">
+                  <div className="flex">
+                    {[...Array(5)].map((_, i) => (
+                      <Star key={i} className="w-4 h-4 fill-yellow-400 text-yellow-400" />
+                    ))}
                   </div>
+                  <span className="text-sm text-gray-600">4.8/5</span>
                 </div>
-
-                <div className="space-y-2">
-                  {product.features.map((feature, index) => (
-                    <div key={index} className="text-sm text-gray-600 flex items-center">
-                      <div className="w-2 h-2 bg-green-600 rounded-full mr-2"></div>
-                      {feature}
-                    </div>
-                  ))}
-                </div>
-
-                <div className="space-y-1">
-                  <div className="flex items-center space-x-2">
-                    <span className="text-2xl font-bold text-red-600">{product.price}</span>
-                    <span className="text-sm text-gray-500 line-through">{product.originalPrice}</span>
-                  </div>
-                  <p className="text-sm text-green-600 font-medium">ou 12x de R$ {(parseInt(product.price.replace(/[^\d]/g, '')) / 12).toFixed(0)}</p>
-                </div>
+                <p className="text-2xl font-bold text-red-600">{category.priceRange}</p>
               </CardContent>
 
               <CardFooter className="p-6 pt-0">
-                <Button className="w-full bg-red-600 hover:bg-red-700 group">
-                  <ShoppingCart className="w-4 h-4 mr-2 group-hover:scale-110 transition-transform" />
-                  Comprar Agora
+                <Button className="w-full bg-red-600 hover:bg-red-700">
+                  <ShoppingCart className="w-4 h-4 mr-2" />
+                  Ver Modelos
                 </Button>
               </CardFooter>
             </Card>
           ))}
         </div>
 
-        <div className="text-center mt-12">
-          <Button size="lg" variant="outline" className="border-red-600 text-red-600 hover:bg-red-50">
-            Ver Todos os Produtos
+        <div className="text-center">
+          <Button size="lg" className="bg-green-600 hover:bg-green-700 text-lg px-8 py-4">
+            Ver Catálogo Completo
           </Button>
         </div>
       </div>
