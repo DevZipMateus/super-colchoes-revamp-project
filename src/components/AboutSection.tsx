@@ -47,7 +47,7 @@ const AboutSection = () => {
       <div className="container mx-auto px-4">
         <div className="text-center space-y-4 mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold text-gray-900">
-            Por que escolher a <span className="text-blue-600">SuperColchões</span>?
+            Por que escolher a <span className="text-red-600">SuperColchões</span>?
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Somos especialistas em sono há mais de uma década, oferecendo produtos de qualidade superior com o melhor atendimento do mercado.
@@ -58,7 +58,7 @@ const AboutSection = () => {
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
           {stats.map((stat, index) => (
             <div key={index} className="text-center">
-              <div className="text-4xl lg:text-5xl font-bold text-blue-600 mb-2">{stat.number}</div>
+              <div className="text-4xl lg:text-5xl font-bold text-red-600 mb-2">{stat.number}</div>
               <div className="text-gray-600 font-medium">{stat.label}</div>
             </div>
           ))}
@@ -68,8 +68,8 @@ const AboutSection = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {features.map((feature, index) => (
             <div key={index} className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow group">
-              <div className="w-16 h-16 bg-blue-100 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-blue-600 transition-colors">
-                <feature.icon className="w-8 h-8 text-blue-600 group-hover:text-white transition-colors" />
+              <div className="w-16 h-16 bg-green-100 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-red-600 transition-colors">
+                <feature.icon className="w-8 h-8 text-green-600 group-hover:text-white transition-colors" />
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-4">{feature.title}</h3>
               <p className="text-gray-600 leading-relaxed">{feature.description}</p>
@@ -90,26 +90,26 @@ const AboutSection = () => {
               </p>
               <div className="space-y-3">
                 <div className="flex items-center space-x-3">
-                  <div className="w-2 h-2 bg-blue-600 rounded-full"></div>
+                  <div className="w-2 h-2 bg-red-600 rounded-full"></div>
                   <span className="text-gray-700">Produtos certificados e de alta qualidade</span>
                 </div>
                 <div className="flex items-center space-x-3">
-                  <div className="w-2 h-2 bg-blue-600 rounded-full"></div>
+                  <div className="w-2 h-2 bg-red-600 rounded-full"></div>
                   <span className="text-gray-700">Atendimento personalizado e especializado</span>
                 </div>
                 <div className="flex items-center space-x-3">
-                  <div className="w-2 h-2 bg-blue-600 rounded-full"></div>
+                  <div className="w-2 h-2 bg-red-600 rounded-full"></div>
                   <span className="text-gray-700">Compromisso com a satisfação do cliente</span>
                 </div>
               </div>
             </div>
-            <div className="bg-gradient-to-br from-blue-100 to-blue-200 rounded-2xl h-80 flex items-center justify-center">
+            <div className="bg-gradient-to-br from-green-100 to-green-200 rounded-2xl h-80 flex items-center justify-center">
               <div className="text-center space-y-4">
-                <div className="w-24 h-24 bg-blue-600 rounded-full flex items-center justify-center mx-auto">
+                <div className="w-24 h-24 bg-red-600 rounded-full flex items-center justify-center mx-auto">
                   <span className="text-white text-3xl font-bold">SC</span>
                 </div>
-                <h4 className="text-2xl font-bold text-blue-800">SuperColchões</h4>
-                <p className="text-blue-700">Especialistas em Sono desde 2013</p>
+                <h4 className="text-2xl font-bold text-green-800">SuperColchões</h4>
+                <p className="text-green-700">Especialistas em Sono desde 2013</p>
               </div>
             </div>
           </div>

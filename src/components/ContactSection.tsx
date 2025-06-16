@@ -38,7 +38,7 @@ const ContactSection = () => {
       <div className="container mx-auto px-4">
         <div className="text-center space-y-4 mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold text-gray-900">
-            Entre em <span className="text-blue-600">Contato</span>
+            Entre em <span className="text-red-600">Contato</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Estamos aqui para ajudar você a encontrar o colchão perfeito. Entre em contato conosco e tire todas as suas dúvidas.
@@ -50,7 +50,7 @@ const ContactSection = () => {
           <Card className="shadow-xl border-0">
             <CardHeader>
               <CardTitle className="text-2xl text-gray-900 flex items-center">
-                <MessageCircle className="w-6 h-6 text-blue-600 mr-2" />
+                <MessageCircle className="w-6 h-6 text-red-600 mr-2" />
                 Envie sua Mensagem
               </CardTitle>
             </CardHeader>
@@ -58,22 +58,22 @@ const ContactSection = () => {
               <div className="grid md:grid-cols-2 gap-4">
                 <div className="space-y-2">
                   <label className="text-sm font-medium text-gray-700">Nome Completo</label>
-                  <Input placeholder="Seu nome completo" className="border-gray-300 focus:border-blue-500" />
+                  <Input placeholder="Seu nome completo" className="border-gray-300 focus:border-red-500" />
                 </div>
                 <div className="space-y-2">
                   <label className="text-sm font-medium text-gray-700">Telefone</label>
-                  <Input placeholder="(11) 99999-9999" className="border-gray-300 focus:border-blue-500" />
+                  <Input placeholder="(11) 99999-9999" className="border-gray-300 focus:border-red-500" />
                 </div>
               </div>
               
               <div className="space-y-2">
                 <label className="text-sm font-medium text-gray-700">E-mail</label>
-                <Input type="email" placeholder="seu@email.com" className="border-gray-300 focus:border-blue-500" />
+                <Input type="email" placeholder="seu@email.com" className="border-gray-300 focus:border-red-500" />
               </div>
               
               <div className="space-y-2">
                 <label className="text-sm font-medium text-gray-700">Assunto</label>
-                <Input placeholder="Como podemos ajudar?" className="border-gray-300 focus:border-blue-500" />
+                <Input placeholder="Como podemos ajudar?" className="border-gray-300 focus:border-red-500" />
               </div>
               
               <div className="space-y-2">
@@ -81,11 +81,11 @@ const ContactSection = () => {
                 <Textarea 
                   placeholder="Conte-nos mais sobre sua necessidade..." 
                   rows={5}
-                  className="border-gray-300 focus:border-blue-500"
+                  className="border-gray-300 focus:border-red-500"
                 />
               </div>
               
-              <Button className="w-full bg-blue-600 hover:bg-blue-700 text-lg py-3">
+              <Button className="w-full bg-red-600 hover:bg-red-700 text-lg py-3">
                 Enviar Mensagem
               </Button>
               
@@ -101,12 +101,12 @@ const ContactSection = () => {
               <Card key={index} className="shadow-lg border-0 hover:shadow-xl transition-shadow">
                 <CardContent className="p-6">
                   <div className="flex items-start space-x-4">
-                    <div className="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center flex-shrink-0">
-                      <info.icon className="w-6 h-6 text-blue-600" />
+                    <div className="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center flex-shrink-0">
+                      <info.icon className="w-6 h-6 text-green-600" />
                     </div>
                     <div>
                       <h3 className="font-bold text-gray-900 text-lg mb-1">{info.title}</h3>
-                      <p className="text-blue-600 font-medium mb-1">{info.content}</p>
+                      <p className="text-red-600 font-medium mb-1">{info.content}</p>
                       <p className="text-gray-600 text-sm">{info.subtitle}</p>
                     </div>
                   </div>
