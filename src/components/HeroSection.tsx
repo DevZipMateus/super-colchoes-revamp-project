@@ -24,7 +24,7 @@ const HeroSection = () => {
           <div className="text-center space-y-6 sm:space-y-8 max-w-4xl w-full">
             <div className="space-y-3 sm:space-y-4">
               <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight drop-shadow-lg text-zinc-50">
-                <span className="text-[#ee1010]">SuperColchões</span>
+                <span className="text-[#ee1010] text-5xl">SuperColchões</span>
                 <br />
                 <span className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl">
                   Especialista em Colchões há mais de{' '}
