@@ -3,28 +3,36 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Phone, Mail, MapPin, Clock, MessageCircle, WholeWord } from 'lucide-react';
+import { Phone, Mail, MapPin, Clock } from 'lucide-react';
 
 const ContactSection = () => {
+  const handleWhatsAppClick = () => {
+    const phoneNumber = "5555991630055";
+    const message = "Olá! Gostaria de saber mais sobre os colchões da SuperColchões.";
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+    window.open(whatsappUrl, '_blank');
+  };
+
   const contactInfo = [
     {
       icon: Phone,
       title: "Telefone / WhatsApp",
-      content: "(11) 99999-9999",
+      content: "(55) 99163-0055",
       subtitle: "Atendimento de Segunda a Sábado",
-      highlight: true
+      highlight: true,
+      isWhatsApp: true
     },
     {
       icon: Mail,
       title: "E-mail",
-      content: "vendas@supercolchoes.com",
+      content: "supercolchoes@yahoo.com.br",
       subtitle: "Respondemos em até 4 horas"
     },
     {
       icon: MapPin,
-      title: "Matriz São Paulo",
-      content: "Rua Augusta, 1234 - Consolação",
-      subtitle: "São Paulo, SP - CEP 01305-000"
+      title: "Endereço",
+      content: "Rua Riachuelo, 224 - Esq. Tuiuti",
+      subtitle: "Santa Maria, RS - CEP 97050-010"
     },
     {
       icon: Clock,
@@ -57,7 +65,7 @@ const ContactSection = () => {
           <Card className="shadow-xl border-0">
             <CardHeader>
               <CardTitle className="text-2xl text-gray-900 flex items-center">
-                <MessageCircle className="w-6 h-6 text-red-600 mr-2" />
+                <img src="/lovable-uploads/95170b76-0f76-439e-9a3e-8f066ecf1a0b.png" alt="WhatsApp" className="w-6 h-6 mr-2" />
                 Solicite um Orçamento
               </CardTitle>
               <p className="text-gray-600">
@@ -72,7 +80,7 @@ const ContactSection = () => {
                 </div>
                 <div className="space-y-2">
                   <label className="text-sm font-medium text-gray-700">Telefone / WhatsApp *</label>
-                  <Input placeholder="(11) 99999-9999" className="border-gray-300 focus:border-red-500" />
+                  <Input placeholder="(55) 99999-9999" className="border-gray-300 focus:border-red-500" />
                 </div>
               </div>
               
@@ -101,7 +109,7 @@ const ContactSection = () => {
                 />
               </div>
               
-              <Button className="w-full bg-red-600 hover:bg-red-700 text-lg py-3">
+              <Button className="w-full bg-red-600 hover:bg-red-700 text-lg py-3" onClick={handleWhatsAppClick}>
                 Enviar Solicitação
               </Button>
               
@@ -114,11 +122,15 @@ const ContactSection = () => {
           {/* Informações de Contato */}
           <div className="space-y-6">
             {contactInfo.map((info, index) => (
-              <Card key={index} className={`shadow-lg border-0 hover:shadow-xl transition-shadow ${info.highlight ? 'bg-green-50 border-green-200' : ''}`}>
+              <Card key={index} className={`shadow-lg border-0 hover:shadow-xl transition-shadow cursor-pointer ${info.highlight ? 'bg-green-50 border-green-200' : ''}`} onClick={info.isWhatsApp ? handleWhatsAppClick : undefined}>
                 <CardContent className="p-6">
                   <div className="flex items-start space-x-4">
                     <div className={`w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0 ${info.highlight ? 'bg-green-500' : 'bg-green-100'}`}>
-                      <info.icon className={`w-6 h-6 ${info.highlight ? 'text-white' : 'text-green-600'}`} />
+                      {info.isWhatsApp ? (
+                        <img src="/lovable-uploads/95170b76-0f76-439e-9a3e-8f066ecf1a0b.png" alt="WhatsApp" className="w-6 h-6" />
+                      ) : (
+                        <info.icon className={`w-6 h-6 ${info.highlight ? 'text-white' : 'text-green-600'}`} />
+                      )}
                     </div>
                     <div>
                       <h3 className="font-bold text-gray-900 text-lg mb-1">{info.title}</h3>
@@ -133,11 +145,11 @@ const ContactSection = () => {
             ))}
 
             {/* WhatsApp Destaque */}
-            <Card className="shadow-lg border-0 bg-green-600 text-white hover:shadow-xl transition-shadow">
+            <Card className="shadow-lg border-0 bg-green-600 text-white hover:shadow-xl transition-shadow cursor-pointer" onClick={handleWhatsAppClick}>
               <CardContent className="p-6">
                 <div className="text-center space-y-4">
                   <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto">
-                    <MessageCircle className="w-8 h-8 text-green-600" />
+                    <img src="/lovable-uploads/95170b76-0f76-439e-9a3e-8f066ecf1a0b.png" alt="WhatsApp" className="w-8 h-8" />
                   </div>
                   <div>
                     <h3 className="font-bold text-xl mb-2">Atendimento WhatsApp</h3>
@@ -145,7 +157,8 @@ const ContactSection = () => {
                       Fale diretamente com nossos especialistas pelo WhatsApp. 
                       Atendimento rápido e personalizado!
                     </p>
-                    <Button className="bg-white text-green-600 hover:bg-gray-100">
+                    <Button className="bg-white text-green-600 hover:bg-gray-100 flex items-center">
+                      <img src="/lovable-uploads/95170b76-0f76-439e-9a3e-8f066ecf1a0b.png" alt="WhatsApp" className="w-4 h-4 mr-2" />
                       Chamar no WhatsApp
                     </Button>
                   </div>
