@@ -1,3 +1,4 @@
+
 import { Clock, Home, Ruler } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 
@@ -30,15 +31,6 @@ const ServicesSection = () => {
           <h2 className="text-4xl lg:text-5xl font-bold text-gray-900">
             Nossos <span className="text-red-600">Serviços</span>
           </h2>
-          
-          {/* Imagem de 38 anos de credibilidade */}
-          <div className="flex justify-center mb-8">
-            <img 
-              src="/lovable-uploads/ada8f457-ba71-42c5-b7cb-61d0bb50b001.png" 
-              alt="38 Anos de Credibilidade - SuperColchões" 
-              className="h-32 w-auto object-contain"
-            />
-          </div>
           
           <p className="text-xl text-gray-600 max-w-4xl mx-auto">
             Oferecemos serviços diferenciados para garantir a melhor experiência na compra do seu colchão

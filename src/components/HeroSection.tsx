@@ -1,3 +1,4 @@
+
 import { Button } from '@/components/ui/button';
 import { Star, Shield, Truck, CreditCard } from 'lucide-react';
 const HeroSection = () => {
@@ -9,7 +10,7 @@ const HeroSection = () => {
   };
   return <section className="relative min-h-screen bg-transparent overflow-hidden">
       {/* Background Image */}
-      <div className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-70" style={{
+      <div className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-100" style={{
       backgroundImage: "url('/lovable-uploads/ce28e2ee-777e-43e4-b5b2-9ae17424306e.png')"
     }} />
       
