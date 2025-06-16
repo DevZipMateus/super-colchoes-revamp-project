@@ -208,11 +208,11 @@ const Catalog = () => {
             {products.map((product) => (
               <Card key={product.id} className="h-full hover:shadow-xl transition-shadow duration-300 border-0 shadow-lg">
                 <CardHeader className="p-0">
-                  <div className="bg-gray-100 h-48 rounded-t-lg overflow-hidden">
+                  <div className="bg-gray-100 h-56 rounded-t-lg overflow-hidden flex items-center justify-center p-4">
                     <img 
                       src={product.image} 
                       alt={product.name}
-                      className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                      className="max-w-full max-h-full object-contain hover:scale-105 transition-transform duration-300"
                     />
                   </div>
                 </CardHeader>
@@ -222,15 +222,9 @@ const Catalog = () => {
                     {product.name}
                   </h3>
                   
-                  {/* Espaço para descrição editável */}
-                  <div className="min-h-[4rem] p-3 bg-gray-50 rounded-lg border-2 border-dashed border-gray-300">
-                    <p className="text-gray-600 text-sm italic">
-                      {product.description}
-                    </p>
-                    <p className="text-xs text-gray-400 mt-2">
-                      * Descrição editável manualmente
-                    </p>
-                  </div>
+                  <p className="text-gray-600 text-sm line-clamp-3 min-h-[4rem]">
+                    {product.description}
+                  </p>
                 </CardContent>
 
                 <CardFooter className="p-4 pt-0">
