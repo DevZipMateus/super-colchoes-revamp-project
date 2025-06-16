@@ -1,4 +1,6 @@
+
 import { Facebook, Instagram, Youtube, Phone, Mail, MapPin } from 'lucide-react';
+
 const Footer = () => {
   const handleWhatsAppClick = () => {
     const phoneNumber = "5555991630055";
@@ -6,13 +8,14 @@ const Footer = () => {
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
   };
-  return <footer className="bg-gray-900 text-white">
+
+  return (
+    <footer className="bg-gray-900 text-white">
       <div className="container mx-auto px-4 py-16">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
           <div className="space-y-6">
             <div>
-              
               <p className="text-gray-300 leading-relaxed">
                 Especialistas em sono há mais de 39 anos, oferecendo os melhores colchões para toda a família.
               </p>
@@ -89,6 +92,8 @@ const Footer = () => {
           </div>
         </div>
       </div>
-    </footer>;
+    </footer>
+  );
 };
+
 export default Footer;
