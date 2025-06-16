@@ -5,46 +5,32 @@ import { Star, Quote } from 'lucide-react';
 const TestimonialsSection = () => {
   const testimonials = [
     {
-      name: "Maria Silva",
-      location: "São Paulo, SP",
-      date: "Há 2 meses",
+      name: "Hemely Cassol",
+      reviews: "1 avaliação",
+      date: "2 meses atrás",
       rating: 5,
-      text: "Excelente atendimento! Comprei um colchão Ortobom e estou muito satisfeita. A entrega foi rápida e o produto chegou em perfeitas condições. Recomendo a SuperColchões!"
+      text: "Minha experiência com a compra do meu novo colchão foi muito boa. Saí da loja exatamente com aquilo que procurava, além de receber no mesmo dia 😁. Realmente indico a Super Colchões, o ambiente é familiar, o vendedor tem conhecimento do seu produto e te indica exatamente o que tu precisa, além disso a qualidade é garantida. 🙌🏼"
     },
     {
-      name: "João Santos",
-      location: "Rio de Janeiro, RJ",
-      date: "Há 1 mês",
+      name: "Valeria Etges Rodrigues de Souza",
+      reviews: "7 avaliações·1 foto",
+      date: "4 meses atrás",
       rating: 5,
-      text: "Melhor loja de colchões que já conheci. Variedade incrível de marcas e preços justos. O vendedor foi muito atencioso e me ajudou a escolher o colchão ideal para minhas necessidades."
+      text: "Quando somos bem atendidos, com gentileza, simpatia, tem muitas risadas junto haha. A gente se torna fiel à loja. Somos clientes há um tempo, e sempre foi assim, lugar onde somos bem tratados, a gente volta, nem que for para dar um oizinho. Desta última compra, que foi colchão, acabamos levando o protetor junto, pelo fato do Adroaldo nos falar da importância, e assim ele é, com sua experiência, conhecimento e sabedoria, nos mostra o que vai ser bom."
     },
     {
-      name: "Ana Costa",
-      location: "Belo Horizonte, MG",
-      date: "Há 3 semanas",
+      name: "Valério V. Soares Leal",
+      reviews: "13 avaliações·1 foto",
+      date: "2 meses atrás",
       rating: 5,
-      text: "Comprei um colchão King Koil e estou dormindo muito melhor. A qualidade é excelente e o prazo de entrega foi cumprido. Voltarei a comprar com certeza!"
+      text: "Excelente, mesmo comprando à distância, pois estava em férias, fui muito bem atendido, comprei e recebi o que realmente havia solicitado, preço, condições de pagamento e recebimento tudo conforme o combinado. Com certeza recomendo esse estabelecimento."
     },
     {
-      name: "Carlos Oliveira",
-      location: "Brasília, DF",
-      date: "Há 1 semana",
+      name: "Giovani Souza",
+      reviews: "9 avaliações",
+      date: "2 meses atrás",
       rating: 5,
-      text: "Atendimento nota 10! Precisava trocar meu colchão urgente e eles conseguiram entregar no mesmo dia. Produto de qualidade e preço justo. Super recomendo!"
-    },
-    {
-      name: "Fernanda Lima",
-      location: "Salvador, BA",
-      date: "Há 2 semanas",
-      rating: 5,
-      text: "Excelente experiência de compra. Site fácil de navegar, muitas opções de pagamento e entrega grátis. O colchão Castor que comprei é maravilhoso!"
-    },
-    {
-      name: "Roberto Mendes",
-      location: "Porto Alegre, RS",
-      date: "Há 1 mês",
-      rating: 5,
-      text: "Já é a segunda vez que compro na SuperColchões. Sempre produtos de qualidade, preços competitivos e atendimento diferenciado. Parabéns pela seriedade!"
+      text: "Excelente como sempre. Adquiri um Colchão King com baú. Baú espaçoso e materiais de primeira linha. Colchão muito confortável. Recomendo 100%. A durabilidade dos produtos são incríveis. Produtos da Super Colchões são de extrema qualidade. Vale muito a pena."
     }
   ];
 
@@ -56,7 +42,7 @@ const TestimonialsSection = () => {
             O que nossos <span className="text-red-600">Clientes</span> dizem
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Mais de 50.000 clientes satisfeitos em todo o Brasil. Confira alguns depoimentos reais:
+            Depoimentos reais de clientes satisfeitos com nossos produtos e atendimento
           </p>
           <div className="flex items-center justify-center space-x-2 mt-6">
             <div className="flex">
@@ -64,12 +50,12 @@ const TestimonialsSection = () => {
                 <Star key={i} className="w-6 h-6 fill-yellow-400 text-yellow-400" />
               ))}
             </div>
-            <span className="text-2xl font-bold text-gray-900">4.8/5</span>
-            <span className="text-gray-600">baseado em 12.543 avaliações</span>
+            <span className="text-2xl font-bold text-gray-900">5.0/5</span>
+            <span className="text-gray-600">baseado em avaliações reais</span>
           </div>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
           {testimonials.map((testimonial, index) => (
             <Card key={index} className="hover:shadow-xl transition-shadow border-0 shadow-lg">
               <CardContent className="p-6 space-y-4">
@@ -88,15 +74,14 @@ const TestimonialsSection = () => {
                 
                 <div className="border-t pt-4">
                   <div className="flex items-center space-x-3">
-                    {/* Espaço para foto do cliente */}
-                    <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center">
-                      <span className="text-green-600 font-bold text-lg">
+                    <div className="w-12 h-12 bg-red-100 rounded-full flex items-center justify-center">
+                      <span className="text-red-600 font-bold text-lg">
                         {testimonial.name.charAt(0)}
                       </span>
                     </div>
                     <div>
                       <p className="font-bold text-gray-900">{testimonial.name}</p>
-                      <p className="text-sm text-gray-600">{testimonial.location}</p>
+                      <p className="text-sm text-gray-600">{testimonial.reviews}</p>
                       <p className="text-xs text-gray-500">{testimonial.date}</p>
                     </div>
                   </div>
@@ -108,15 +93,14 @@ const TestimonialsSection = () => {
 
         <div className="text-center mt-12">
           <p className="text-lg text-gray-600 mb-6">
-            Junte-se aos milhares de clientes satisfeitos!
+            Junte-se aos nossos clientes satisfeitos!
           </p>
-          <div className="bg-green-50 rounded-2xl p-8 max-w-2xl mx-auto">
-            <h3 className="text-2xl font-bold text-green-800 mb-4">
+          <div className="bg-red-50 rounded-2xl p-8 max-w-2xl mx-auto">
+            <h3 className="text-2xl font-bold text-red-800 mb-4">
               Garantia de Satisfação 100%
             </h3>
-            <p className="text-green-700">
-              Se não ficar satisfeito com seu colchão em até 30 dias, 
-              devolvemos seu dinheiro sem questionamentos!
+            <p className="text-red-700">
+              Se não ficar satisfeito com seu colchão, oferecemos garantia e suporte completo para sua satisfação!
             </p>
           </div>
         </div>
