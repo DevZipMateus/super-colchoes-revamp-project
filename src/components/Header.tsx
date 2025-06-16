@@ -19,16 +19,16 @@ const Header = () => {
             <div className="flex items-center space-x-4">
               <div className="flex items-center">
                 <Phone className="w-4 h-4 mr-1" />
-                <span>(11) 99999-9999</span>
+                <span>(55) 3221-8035</span>
               </div>
               <div className="flex items-center">
                 <Mail className="w-4 h-4 mr-1" />
-                <span>contato@supercolchoes.com</span>
+                <span>supercolchoes@yahoo.com.br</span>
               </div>
             </div>
             <div className="flex items-center mt-2 sm:mt-0">
               <MapPin className="w-4 h-4 mr-1" />
-              <span>São Paulo, SP</span>
+              <span>Santa Maria, RS</span>
             </div>
           </div>
         </div>
