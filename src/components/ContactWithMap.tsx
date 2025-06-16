@@ -62,26 +62,14 @@ const ContactWithMap = () => {
                   <label className="text-sm font-medium text-gray-700">Nome Completo *</label>
                   <Input placeholder="Seu nome completo" className="border-gray-300 focus:border-red-500" />
                 </div>
-                <div className="space-y-2">
-                  <label className="text-sm font-medium text-gray-700">Telefone / WhatsApp *</label>
-                  <Input placeholder="(55) 99999-9999" className="border-gray-300 focus:border-red-500" />
-                </div>
+                
               </div>
               
-              <div className="space-y-2">
-                <label className="text-sm font-medium text-gray-700">E-mail</label>
-                <Input type="email" placeholder="seu@email.com" className="border-gray-300 focus:border-red-500" />
-              </div>
+              
               
               <div className="grid md:grid-cols-2 gap-4">
-                <div className="space-y-2">
-                  <label className="text-sm font-medium text-gray-700">Cidade</label>
-                  <Input placeholder="Sua cidade" className="border-gray-300 focus:border-red-500" />
-                </div>
-                <div className="space-y-2">
-                  <label className="text-sm font-medium text-gray-700">Tamanho do Colchão</label>
-                  <Input placeholder="Ex: Casal, Queen, King..." className="border-gray-300 focus:border-red-500" />
-                </div>
+                
+                
               </div>
               
               <div className="space-y-2">
