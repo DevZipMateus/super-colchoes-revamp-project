@@ -1,6 +1,4 @@
-
 import { Facebook, Instagram, Youtube, Phone, Mail, MapPin } from 'lucide-react';
-
 const Footer = () => {
   const handleWhatsAppClick = () => {
     const phoneNumber = "5555991630055";
@@ -8,57 +6,29 @@ const Footer = () => {
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
   };
-
-  return (
-    <footer className="bg-gray-900 text-white">
+  return <footer className="bg-gray-900 text-white">
       <div className="container mx-auto px-4 py-16">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
           <div className="space-y-6">
             <div>
-              <img 
-                src="/lovable-uploads/748faed7-8409-4ca0-a866-967259247f21.png" 
-                alt="SuperColchões" 
-                className="h-10 w-auto mb-4 brightness-0 invert"
-              />
+              
               <p className="text-gray-300 leading-relaxed">
                 Especialistas em sono há mais de 39 anos, oferecendo os melhores colchões para toda a família.
               </p>
             </div>
             <div className="flex space-x-4">
-              <a 
-                href="https://www.facebook.com/supercolchoesumaescolhainteligente" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="w-10 h-10 bg-red-600 rounded-full flex items-center justify-center hover:bg-red-700 transition-colors"
-              >
+              <a href="https://www.facebook.com/supercolchoesumaescolhainteligente" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-red-600 rounded-full flex items-center justify-center hover:bg-red-700 transition-colors">
                 <Facebook className="w-5 h-5" />
               </a>
-              <a 
-                href="https://www.instagram.com/super_colchoes/" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="w-10 h-10 bg-red-600 rounded-full flex items-center justify-center hover:bg-red-700 transition-colors"
-              >
+              <a href="https://www.instagram.com/super_colchoes/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-red-600 rounded-full flex items-center justify-center hover:bg-red-700 transition-colors">
                 <Instagram className="w-5 h-5" />
               </a>
-              <a 
-                href="https://www.youtube.com/channel/UCtNbeMmIUFsQ8jSULkOYIcQ" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="w-10 h-10 bg-red-600 rounded-full flex items-center justify-center hover:bg-red-700 transition-colors"
-              >
+              <a href="https://www.youtube.com/channel/UCtNbeMmIUFsQ8jSULkOYIcQ" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-red-600 rounded-full flex items-center justify-center hover:bg-red-700 transition-colors">
                 <Youtube className="w-5 h-5" />
               </a>
-              <button 
-                onClick={handleWhatsAppClick}
-                className="w-10 h-10 bg-green-500 rounded-full flex items-center justify-center hover:bg-green-600 transition-colors"
-              >
-                <img 
-                  src="/lovable-uploads/95170b76-0f76-439e-9a3e-8f066ecf1a0b.png" 
-                  alt="WhatsApp" 
-                  className="w-6 h-6"
-                />
+              <button onClick={handleWhatsAppClick} className="w-10 h-10 bg-green-500 rounded-full flex items-center justify-center hover:bg-green-600 transition-colors">
+                <img src="/lovable-uploads/95170b76-0f76-439e-9a3e-8f066ecf1a0b.png" alt="WhatsApp" className="w-6 h-6" />
               </button>
             </div>
           </div>
@@ -96,11 +66,7 @@ const Footer = () => {
                 <span className="text-gray-300">(55) 3221-8035</span>
               </div>
               <div className="flex items-center space-x-3 cursor-pointer hover:text-green-400 transition-colors" onClick={handleWhatsAppClick}>
-                <img 
-                  src="/lovable-uploads/95170b76-0f76-439e-9a3e-8f066ecf1a0b.png" 
-                  alt="WhatsApp" 
-                  className="w-5 h-5"
-                />
+                <img src="/lovable-uploads/95170b76-0f76-439e-9a3e-8f066ecf1a0b.png" alt="WhatsApp" className="w-5 h-5" />
                 <span className="text-gray-300">(55) 99163-0055</span>
               </div>
               <div className="flex items-center space-x-3 cursor-pointer hover:text-red-400 transition-colors" onClick={handleWhatsAppClick}>
@@ -134,8 +100,6 @@ const Footer = () => {
           </div>
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 };
-
 export default Footer;
