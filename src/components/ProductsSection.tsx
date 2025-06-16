@@ -6,6 +6,13 @@ import { Star, ShoppingCart, Truck, Shield, CreditCard, Award } from 'lucide-rea
 import { Link } from 'react-router-dom';
 
 const ProductsSection = () => {
+  const handleWhatsAppClick = () => {
+    const phoneNumber = "5555991630055";
+    const message = "Olá! Gostaria de solicitar um orçamento para colchões.";
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+    window.open(whatsappUrl, '_blank');
+  };
+
   const brands = [
     "Ortobom", "Castor", "Gazin", "Herval", "King Koil", 
     "Sealy", "Simmons", "Serta", "Tempur", "Probel",
@@ -17,9 +24,6 @@ const ProductsSection = () => {
       name: "Colchão Ortobom Physical",
       category: "Ortopédico",
       size: "Casal 138x188cm",
-      originalPrice: "R$ 1.299,00",
-      salePrice: "R$ 899,00",
-      discount: "31%",
       features: ["Molas Ensacadas", "Pillow Top", "Anti-ácaro"],
       rating: 4.8,
       reviews: 245,
@@ -29,9 +33,6 @@ const ProductsSection = () => {
       name: "Colchão Castor Sleep Max",
       category: "Espuma Viscoelástica",
       size: "Queen 158x198cm",
-      originalPrice: "R$ 1.899,00",
-      salePrice: "R$ 1.299,00",
-      discount: "32%",
       features: ["Viscoelástico", "7 Zonas de Conforto", "Termorregulador"],
       rating: 4.9,
       reviews: 187,
@@ -41,9 +42,6 @@ const ProductsSection = () => {
       name: "Colchão King Koil World Class",
       category: "Premium",
       size: "King 193x203cm",
-      originalPrice: "R$ 3.299,00",
-      salePrice: "R$ 2.199,00",
-      discount: "33%",
       features: ["Molas Pocket", "Memory Foam", "Bordas Reforçadas"],
       rating: 5.0,
       reviews: 98,
@@ -53,9 +51,6 @@ const ProductsSection = () => {
       name: "Colchão Sealy Posturepedic",
       category: "Ortopédico Premium",
       size: "Casal 138x188cm",
-      originalPrice: "R$ 2.199,00",
-      salePrice: "R$ 1.499,00",
-      discount: "32%",
       features: ["Tecnologia PostureTech", "Sistema de Zonas", "Antibacteriano"],
       rating: 4.7,
       reviews: 156,
@@ -67,7 +62,6 @@ const ProductsSection = () => {
     {
       name: "Colchões Solteiro",
       description: "Ideais para quartos infantis e de hóspedes",
-      priceRange: "A partir de R$ 299",
       sizes: ["88x188cm", "78x188cm"],
       image: "categoria-solteiro",
       products: 45
@@ -75,7 +69,6 @@ const ProductsSection = () => {
     {
       name: "Colchões Casal",
       description: "Conforto para o casal, diversas tecnologias",
-      priceRange: "A partir de R$ 599",
       sizes: ["138x188cm", "128x188cm"],
       image: "categoria-casal",
       products: 78
@@ -83,7 +76,6 @@ const ProductsSection = () => {
     {
       name: "Colchões Queen",
       description: "Mais espaço e conforto para o seu descanso",
-      priceRange: "A partir de R$ 899",
       sizes: ["158x198cm"],
       image: "categoria-queen",
       products: 65
@@ -91,7 +83,6 @@ const ProductsSection = () => {
     {
       name: "Colchões King",
       description: "O máximo em espaço e luxo",
-      priceRange: "A partir de R$ 1.299",
       sizes: ["193x203cm"],
       image: "categoria-king",
       products: 32
@@ -99,7 +90,6 @@ const ProductsSection = () => {
     {
       name: "Colchões Ortopédicos",
       description: "Tratamento para coluna e articulações",
-      priceRange: "A partir de R$ 799",
       sizes: ["Todos os tamanhos"],
       image: "categoria-ortopedico",
       products: 89
@@ -107,7 +97,6 @@ const ProductsSection = () => {
     {
       name: "Colchões de Molas",
       description: "Tecnologia de molas ensacadas e bonnell",
-      priceRange: "A partir de R$ 699",
       sizes: ["Todos os tamanhos"],
       image: "categoria-molas",
       products: 67
@@ -115,7 +104,6 @@ const ProductsSection = () => {
     {
       name: "Colchões de Espuma",
       description: "Densidade alta, conforto e durabilidade",
-      priceRange: "A partir de R$ 399",
       sizes: ["Todos os tamanhos"],
       image: "categoria-espuma",
       products: 54
@@ -123,7 +111,6 @@ const ProductsSection = () => {
     {
       name: "Colchões Magnéticos",
       description: "Terapia magnética para melhor circulação",
-      priceRange: "A partir de R$ 999",
       sizes: ["Casal, Queen, King"],
       image: "categoria-magnetico",
       products: 23
@@ -203,11 +190,6 @@ const ProductsSection = () => {
                       </div>
                       <p className="text-gray-700 font-medium text-sm">{product.image}</p>
                     </div>
-                    {product.discount && (
-                      <Badge className="absolute top-3 right-3 bg-red-600 text-white">
-                        -{product.discount}
-                      </Badge>
-                    )}
                   </div>
                 </CardHeader>
                 
@@ -245,20 +227,15 @@ const ProductsSection = () => {
                       ))}
                     </div>
                   </div>
-                  
-                  <div className="space-y-1">
-                    {product.originalPrice && (
-                      <p className="text-sm text-gray-500 line-through">{product.originalPrice}</p>
-                    )}
-                    <p className="text-2xl font-bold text-red-600">{product.salePrice}</p>
-                    <p className="text-xs text-gray-600">ou 12x de R$ {(parseInt(product.salePrice.replace(/\D/g, '')) / 12).toFixed(0)}</p>
-                  </div>
                 </CardContent>
 
                 <CardFooter className="p-4 pt-0">
-                  <Button className="w-full bg-red-600 hover:bg-red-700 text-sm">
+                  <Button 
+                    className="w-full bg-red-600 hover:bg-red-700 text-sm"
+                    onClick={handleWhatsAppClick}
+                  >
                     <ShoppingCart className="w-4 h-4 mr-2" />
-                    Ver Detalhes
+                    Solicitar Orçamento
                   </Button>
                 </CardFooter>
               </Card>
@@ -326,13 +303,15 @@ const ProductsSection = () => {
                     </div>
                     <span className="text-sm text-gray-600">4.8/5</span>
                   </div>
-                  <p className="text-2xl font-bold text-red-600">{category.priceRange}</p>
                 </CardContent>
 
                 <CardFooter className="p-6 pt-0">
-                  <Button className="w-full bg-red-600 hover:bg-red-700">
+                  <Button 
+                    className="w-full bg-red-600 hover:bg-red-700"
+                    onClick={handleWhatsAppClick}
+                  >
                     <ShoppingCart className="w-4 h-4 mr-2" />
-                    Ver Produtos
+                    Solicitar Orçamento
                   </Button>
                 </CardFooter>
               </Card>
@@ -354,7 +333,12 @@ const ProductsSection = () => {
                 Ver Catálogo Completo
               </Button>
             </Link>
-            <Button size="lg" variant="outline" className="border-red-200 text-red-600 hover:bg-red-50 text-lg px-8 py-4">
+            <Button 
+              size="lg" 
+              variant="outline" 
+              className="border-red-200 text-red-600 hover:bg-red-50 text-lg px-8 py-4"
+              onClick={handleWhatsAppClick}
+            >
               Falar com Especialista
             </Button>
           </div>
