@@ -1,49 +1,38 @@
-
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Phone, Mail, MapPin, Clock } from 'lucide-react';
-
 const ContactWithMap = () => {
   const phoneNumber = "5555991630055";
   const message = "Olá! Gostaria de saber mais sobre os colchões da SuperColchões.";
-  
   const handleWhatsAppClick = () => {
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
   };
-
-  const contactInfo = [
-    {
-      icon: Phone,
-      title: "Telefone Fixo",
-      content: "(55) 3221-8035",
-      subtitle: "Atendimento de Segunda a Sábado"
-    },
-    {
-      icon: Phone,
-      title: "WhatsApp",
-      content: "(55) 99163-0055",
-      subtitle: "Atendimento rápido e personalizado",
-      highlight: true
-    },
-    {
-      icon: Mail,
-      title: "E-mail",
-      content: "supercolchoes@yahoo.com.br",
-      subtitle: "Respondemos em até 4 horas"
-    },
-    {
-      icon: MapPin,
-      title: "Endereço",
-      content: "Rua Riachuelo, 224 - Esq. Tuiuti",
-      subtitle: "Santa Maria, RS - CEP 97050-010"
-    }
-  ];
-
-  return (
-    <section className="py-12 sm:py-16 lg:py-24 bg-white">
+  const contactInfo = [{
+    icon: Phone,
+    title: "Telefone Fixo",
+    content: "(55) 3221-8035",
+    subtitle: "Atendimento de Segunda a Sábado"
+  }, {
+    icon: Phone,
+    title: "WhatsApp",
+    content: "(55) 99163-0055",
+    subtitle: "Atendimento rápido e personalizado",
+    highlight: true
+  }, {
+    icon: Mail,
+    title: "E-mail",
+    content: "supercolchoes@yahoo.com.br",
+    subtitle: "Respondemos em até 4 horas"
+  }, {
+    icon: MapPin,
+    title: "Endereço",
+    content: "Rua Riachuelo, 224 - Esq. Tuiuti",
+    subtitle: "Santa Maria, RS - CEP 97050-010"
+  }];
+  return <section className="py-12 sm:py-16 lg:py-24 bg-white">
       <div className="container mx-auto px-4">
         <div className="text-center space-y-4 mb-12 sm:mb-16">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900">
@@ -91,9 +80,8 @@ const ContactWithMap = () => {
           {/* Informações de Contato */}
           <div className="space-y-4 sm:space-y-6">
             {contactInfo.map((info, index) => {
-              const IconComponent = info.icon;
-              return (
-                <Card key={index} className={`shadow-lg border-0 hover:shadow-xl transition-shadow cursor-pointer p-4 sm:p-6 ${info.highlight ? 'bg-green-50 border-green-200' : ''}`} onClick={handleWhatsAppClick}>
+            const IconComponent = info.icon;
+            return <Card key={index} className={`shadow-lg border-0 hover:shadow-xl transition-shadow cursor-pointer p-4 sm:p-6 ${info.highlight ? 'bg-green-50 border-green-200' : ''}`} onClick={handleWhatsAppClick}>
                   <div className="flex items-center space-x-4">
                     <div className={`w-12 h-12 rounded-full flex items-center justify-center ${info.highlight ? 'bg-green-600' : 'bg-gray-100'}`}>
                       <IconComponent className={`w-6 h-6 ${info.highlight ? 'text-white' : 'text-gray-600'}`} />
@@ -104,20 +92,11 @@ const ContactWithMap = () => {
                       <p className="text-xs sm:text-sm text-gray-600">{info.subtitle}</p>
                     </div>
                   </div>
-                </Card>
-              );
-            })}
+                </Card>;
+          })}
 
             {/* WhatsApp Destaque */}
-            <Card className="shadow-lg border-0 bg-green-600 text-white hover:shadow-xl transition-shadow cursor-pointer p-4 sm:p-6" onClick={handleWhatsAppClick}>
-              <div className="text-center">
-                <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-4">
-                  <img src="/lovable-uploads/ab271b32-cd91-484c-97ce-567483a1d65b.png" alt="WhatsApp" className="w-8 h-8" />
-                </div>
-                <h3 className="text-lg sm:text-xl font-bold mb-2">Atendimento via WhatsApp</h3>
-                <p className="text-sm sm:text-base opacity-90">Clique para conversar agora mesmo!</p>
-              </div>
-            </Card>
+            
           </div>
         </div>
 
@@ -127,17 +106,9 @@ const ContactWithMap = () => {
             Nossa Localização
           </h3>
           <div className="bg-white rounded-lg overflow-hidden shadow-lg">
-            <iframe 
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3458.076666666667!2d-53.80666668885498!3d-29.68444998202286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9501d57f7b7b7b7b%3A0x1234567890abcdef!2sRua%20Riachuelo%2C%20224%20-%20Centro%2C%20Santa%20Maria%20-%20RS%2C%2097050-010!5e0!3m2!1spt-BR!2sbr!4v1234567890123!5m2!1spt-BR!2sbr" 
-              width="100%" 
-              height="300"
-              className="sm:h-[400px]"
-              style={{ border: 0 }} 
-              allowFullScreen 
-              loading="lazy" 
-              referrerPolicy="no-referrer-when-downgrade"
-              title="Localização Super Colchões"
-            />
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3458.076666666667!2d-53.80666668885498!3d-29.68444998202286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9501d57f7b7b7b7b%3A0x1234567890abcdef!2sRua%20Riachuelo%2C%20224%20-%20Centro%2C%20Santa%20Maria%20-%20RS%2C%2097050-010!5e0!3m2!1spt-BR!2sbr!4v1234567890123!5m2!1spt-BR!2sbr" width="100%" height="300" className="sm:h-[400px]" style={{
+            border: 0
+          }} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade" title="Localização Super Colchões" />
           </div>
           <div className="text-center mt-4 sm:mt-6 space-y-2">
             <p className="text-base sm:text-lg font-semibold text-gray-800">
@@ -152,8 +123,6 @@ const ContactWithMap = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default ContactWithMap;
