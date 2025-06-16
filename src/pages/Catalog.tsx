@@ -4,7 +4,8 @@ import { MessageCircle, ArrowLeft, Edit2, Check, X } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+
 const Catalog = () => {
   const [products, setProducts] = useState([{
     id: 1,
@@ -144,16 +145,28 @@ const Catalog = () => {
   }]);
   const [editingId, setEditingId] = useState<number | null>(null);
   const [tempValue, setTempValue] = useState("");
+
+  // Scroll to top when component mounts
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: 'smooth'
+    });
+  }, []);
+
   const handleWhatsAppClick = (productName: string) => {
     const phoneNumber = "5555991630055";
     const message = `Olá! Gostaria de solicitar um orçamento para o produto: ${productName}`;
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
   };
+
   const startEditing = (id: number, currentValue: string) => {
     setEditingId(id);
     setTempValue(currentValue);
   };
+
   const saveEdit = (id: number) => {
     setProducts(products.map(product => product.id === id ? {
       ...product,
@@ -162,10 +175,12 @@ const Catalog = () => {
     setEditingId(null);
     setTempValue("");
   };
+
   const cancelEdit = () => {
     setEditingId(null);
     setTempValue("");
   };
+
   return <div className="min-h-screen bg-gray-50">
       <Header />
       
@@ -215,7 +230,9 @@ const Catalog = () => {
                           </button>
                         </div>
                       </div> : <div className="flex items-start justify-between group">
-                        
+                        <p className="text-gray-600 text-sm line-clamp-3 flex-1">
+                          {product.description}
+                        </p>
                         <button onClick={() => startEditing(product.id, product.description)} className="p-1 text-gray-400 hover:text-gray-600 opacity-0 group-hover:opacity-100 transition-opacity">
                           <Edit2 className="w-4 h-4" />
                         </button>
@@ -237,4 +254,5 @@ const Catalog = () => {
       <Footer />
     </div>;
 };
+
 export default Catalog;
