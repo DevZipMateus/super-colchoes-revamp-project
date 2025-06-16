@@ -15,13 +15,16 @@ const HeroSection = () => {
     <section className="relative min-h-screen bg-transparent overflow-hidden">
       {/* Background Image - Responsivo */}
       <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-100"
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
           backgroundImage: "url('/lovable-uploads/ce28e2ee-777e-43e4-b5b2-9ae17424306e.png')",
           backgroundSize: 'cover',
           backgroundPosition: 'center center'
         }}
       />
+      
+      {/* White overlay for better text readability */}
+      <div className="absolute inset-0 bg-white opacity-10" />
       
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 py-8 sm:py-12 lg:py-20">
