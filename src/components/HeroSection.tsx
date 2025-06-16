@@ -28,7 +28,7 @@ const HeroSection = () => {
                 <br />
                 <span className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl">
                   Especialista em Colchões há mais de{' '}
-                  <span className="text-[#1efe0d]">20 anos</span>
+                  <span className="text-[#1af00c]">20 anos</span>
                 </span>
               </h1>
             </div>
