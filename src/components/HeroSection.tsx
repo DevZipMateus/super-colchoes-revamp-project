@@ -23,9 +23,7 @@ const HeroSection = () => {
                 <br />
                 Especialista em Colchões há mais de <span className="text-green-600">20 anos</span>
               </h1>
-              <p className="text-xl lg:text-2xl text-gray-600 leading-relaxed">
-                Trabalhamos com as melhores marcas nacionais e importadas. Colchões Ortobom, Castor, Gazin, Herval, King Koil, Sealy, Simmons, Serta, Tempur e muito mais!
-              </p>
+              
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
