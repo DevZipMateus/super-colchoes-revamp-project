@@ -1,4 +1,3 @@
-
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardFooter, CardHeader } from '@/components/ui/card';
 import { MessageCircle, ArrowLeft, Edit2, Check, X } from 'lucide-react';
@@ -6,7 +5,6 @@ import { Link } from 'react-router-dom';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { useState } from 'react';
-
 const Catalog = () => {
   const [products, setProducts] = useState([{
     id: 1,
@@ -144,18 +142,15 @@ const Catalog = () => {
     description: "Colchão branco com sistema de molas ensacadas individuais e tecnologia avançada de conforto.",
     image: "/lovable-uploads/a6d06699-4209-4b0b-b13c-7ba9664879f2.png"
   }]);
-
   const [editingId, setEditingId] = useState<number | null>(null);
   const [editingName, setEditingName] = useState<number | null>(null);
   const [tempValue, setTempValue] = useState("");
-
   const handleWhatsAppClick = (productName: string) => {
     const phoneNumber = "5555991630055";
     const message = `Olá! Gostaria de solicitar um orçamento para o produto: ${productName}`;
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
   };
-
   const startEditing = (id: number, field: 'name' | 'description', currentValue: string) => {
     if (field === 'name') {
       setEditingName(id);
@@ -164,14 +159,11 @@ const Catalog = () => {
     }
     setTempValue(currentValue);
   };
-
   const saveEdit = (id: number, field: 'name' | 'description') => {
-    setProducts(products.map(product => 
-      product.id === id 
-        ? { ...product, [field]: tempValue }
-        : product
-    ));
-    
+    setProducts(products.map(product => product.id === id ? {
+      ...product,
+      [field]: tempValue
+    } : product));
     if (field === 'name') {
       setEditingName(null);
     } else {
@@ -179,13 +171,11 @@ const Catalog = () => {
     }
     setTempValue("");
   };
-
   const cancelEdit = () => {
     setEditingId(null);
     setEditingName(null);
     setTempValue("");
   };
-
   return <div className="min-h-screen bg-gray-50">
       <Header />
       
@@ -219,84 +209,44 @@ const Catalog = () => {
                 <CardContent className="p-4 space-y-3 flex-1">
                   {/* Editable Name */}
                   <div className="relative group">
-                    {editingName === product.id ? (
-                      <div className="flex items-center gap-2">
-                        <textarea
-                          value={tempValue}
-                          onChange={(e) => setTempValue(e.target.value)}
-                          className="w-full text-lg font-bold text-gray-900 border border-gray-300 rounded px-2 py-1 resize-none"
-                          rows={2}
-                          autoFocus
-                        />
+                    {editingName === product.id ? <div className="flex items-center gap-2">
+                        <textarea value={tempValue} onChange={e => setTempValue(e.target.value)} className="w-full text-lg font-bold text-gray-900 border border-gray-300 rounded px-2 py-1 resize-none" rows={2} autoFocus />
                         <div className="flex flex-col gap-1">
-                          <button
-                            onClick={() => saveEdit(product.id, 'name')}
-                            className="p-1 text-green-600 hover:text-green-700"
-                          >
+                          <button onClick={() => saveEdit(product.id, 'name')} className="p-1 text-green-600 hover:text-green-700">
                             <Check className="w-4 h-4" />
                           </button>
-                          <button
-                            onClick={cancelEdit}
-                            className="p-1 text-red-600 hover:text-red-700"
-                          >
+                          <button onClick={cancelEdit} className="p-1 text-red-600 hover:text-red-700">
                             <X className="w-4 h-4" />
                           </button>
                         </div>
-                      </div>
-                    ) : (
-                      <div className="flex items-start justify-between group">
+                      </div> : <div className="flex items-start justify-between group">
                         <h3 className="text-lg font-bold text-gray-900 line-clamp-2 min-h-[3rem] flex-1">
                           {product.name}
                         </h3>
-                        <button
-                          onClick={() => startEditing(product.id, 'name', product.name)}
-                          className="p-1 text-gray-400 hover:text-gray-600 opacity-0 group-hover:opacity-100 transition-opacity"
-                        >
+                        <button onClick={() => startEditing(product.id, 'name', product.name)} className="p-1 text-gray-400 hover:text-gray-600 opacity-0 group-hover:opacity-100 transition-opacity">
                           <Edit2 className="w-4 h-4" />
                         </button>
-                      </div>
-                    )}
+                      </div>}
                   </div>
 
                   {/* Editable Description */}
                   <div className="relative group">
-                    {editingId === product.id ? (
-                      <div className="flex items-start gap-2">
-                        <textarea
-                          value={tempValue}
-                          onChange={(e) => setTempValue(e.target.value)}
-                          className="w-full text-gray-600 text-sm border border-gray-300 rounded px-2 py-1 resize-none"
-                          rows={3}
-                          autoFocus
-                        />
+                    {editingId === product.id ? <div className="flex items-start gap-2">
+                        <textarea value={tempValue} onChange={e => setTempValue(e.target.value)} className="w-full text-gray-600 text-sm border border-gray-300 rounded px-2 py-1 resize-none" rows={3} autoFocus />
                         <div className="flex flex-col gap-1">
-                          <button
-                            onClick={() => saveEdit(product.id, 'description')}
-                            className="p-1 text-green-600 hover:text-green-700"
-                          >
+                          <button onClick={() => saveEdit(product.id, 'description')} className="p-1 text-green-600 hover:text-green-700">
                             <Check className="w-4 h-4" />
                           </button>
-                          <button
-                            onClick={cancelEdit}
-                            className="p-1 text-red-600 hover:text-red-700"
-                          >
+                          <button onClick={cancelEdit} className="p-1 text-red-600 hover:text-red-700">
                             <X className="w-4 h-4" />
                           </button>
                         </div>
-                      </div>
-                    ) : (
-                      <div className="flex items-start justify-between group">
-                        <p className="text-gray-600 text-sm line-clamp-3 flex-1">
-                          {product.description}
-                        </p>
-                        <button
-                          onClick={() => startEditing(product.id, 'description', product.description)}
-                          className="p-1 text-gray-400 hover:text-gray-600 opacity-0 group-hover:opacity-100 transition-opacity"
-                        >
+                      </div> : <div className="flex items-start justify-between group">
+                        
+                        <button onClick={() => startEditing(product.id, 'description', product.description)} className="p-1 text-gray-400 hover:text-gray-600 opacity-0 group-hover:opacity-100 transition-opacity">
                           <Edit2 className="w-4 h-4" />
                         </button>
-                      </div>
-                    )}
+                      </div>}
                   </div>
                 </CardContent>
 
