@@ -12,10 +12,10 @@ const HeroSection = () => {
   };
 
   return (
-    <section className="relative min-h-screen bg-gradient-to-br from-green-50 to-white overflow-hidden">
+    <section className="relative min-h-screen bg-transparent overflow-hidden">
       {/* Background Image */}
       <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-30" 
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-70" 
         style={{
           backgroundImage: "url('/lovable-uploads/ce28e2ee-777e-43e4-b5b2-9ae17424306e.png')"
         }} 
@@ -26,26 +26,26 @@ const HeroSection = () => {
         <div className="flex items-center justify-center min-h-[80vh]">
           <div className="text-center space-y-8 max-w-4xl">
             <div className="space-y-4">
-              <h1 className="text-4xl lg:text-6xl font-bold text-gray-900 leading-tight">
-                <span className="text-red-600">SuperColchões</span>
+              <h1 className="text-4xl lg:text-6xl font-bold text-white leading-tight drop-shadow-lg">
+                <span className="text-red-400">SuperColchões</span>
                 <br />
-                Especialista em Colchões há mais de <span className="text-green-600">20 anos</span>
+                Especialista em Colchões há mais de <span className="text-green-400">20 anos</span>
               </h1>
             </div>
 
             {/* Promotional Information */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 my-12">
-              <div className="bg-white/90 backdrop-blur-sm p-6 rounded-xl shadow-lg border-2 border-green-200">
+              <div className="bg-white/95 backdrop-blur-sm p-6 rounded-xl shadow-lg border-2 border-green-200">
                 <div className="text-2xl font-bold text-green-600 mb-2">12x</div>
                 <div className="text-lg font-semibold text-gray-800">sem juros</div>
               </div>
               
-              <div className="bg-white/90 backdrop-blur-sm p-6 rounded-xl shadow-lg border-2 border-red-200">
+              <div className="bg-white/95 backdrop-blur-sm p-6 rounded-xl shadow-lg border-2 border-red-200">
                 <div className="text-2xl font-bold text-red-600 mb-2">20%</div>
                 <div className="text-lg font-semibold text-gray-800">de desconto à vista</div>
               </div>
               
-              <div className="bg-white/90 backdrop-blur-sm p-6 rounded-xl shadow-lg border-2 border-blue-200">
+              <div className="bg-white/95 backdrop-blur-sm p-6 rounded-xl shadow-lg border-2 border-blue-200">
                 <div className="text-2xl font-bold text-blue-600 mb-2">15%</div>
                 <div className="text-lg font-semibold text-gray-800">de desconto a prazo em até 5x</div>
               </div>
@@ -61,7 +61,7 @@ const HeroSection = () => {
               </Button>
             </div>
 
-            <div className="bg-white/90 backdrop-blur-sm rounded-xl p-6 shadow-lg space-y-2">
+            <div className="bg-white/95 backdrop-blur-sm rounded-xl p-6 shadow-lg space-y-2">
               <p className="text-lg font-semibold text-gray-800">
                 📍 Rua Riachuelo, 224 - Esq. Tuiuti, Santa Maria, RS
               </p>
