@@ -1,35 +1,27 @@
-
 import { Button } from '@/components/ui/button';
 import { Star, Shield, Truck, CreditCard } from 'lucide-react';
-
 const HeroSection = () => {
   const phoneNumber = "5555991630055";
   const message = "Olá! Gostaria de saber mais sobre os colchões da SuperColchões.";
-  
   const handleWhatsAppClick = () => {
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
   };
-
-  return (
-    <section className="relative min-h-screen bg-transparent overflow-hidden">
+  return <section className="relative min-h-screen bg-transparent overflow-hidden">
       {/* Background Image */}
-      <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-70" 
-        style={{
-          backgroundImage: "url('/lovable-uploads/ce28e2ee-777e-43e4-b5b2-9ae17424306e.png')"
-        }} 
-      />
+      <div className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-70" style={{
+      backgroundImage: "url('/lovable-uploads/ce28e2ee-777e-43e4-b5b2-9ae17424306e.png')"
+    }} />
       
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 py-12 lg:py-20">
         <div className="flex items-center justify-center min-h-[80vh]">
           <div className="text-center space-y-8 max-w-4xl">
             <div className="space-y-4">
-              <h1 className="text-4xl lg:text-6xl font-bold text-white leading-tight drop-shadow-lg">
-                <span className="text-red-400">SuperColchões</span>
+              <h1 className="text-4xl lg:text-6xl font-bold leading-tight drop-shadow-lg text-neutral-900">
+                <span className="text-[#ee1010]">SuperColchões</span>
                 <br />
-                Especialista em Colchões há mais de <span className="text-green-400">20 anos</span>
+                Especialista em Colchões há mais de <span className="text-[#19a50f]">20 anos</span>
               </h1>
             </div>
 
@@ -52,11 +44,7 @@ const HeroSection = () => {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button 
-                size="lg" 
-                onClick={handleWhatsAppClick} 
-                className="bg-green-600 hover:bg-green-700 text-white text-lg px-8 py-4 shadow-lg"
-              >
+              <Button size="lg" onClick={handleWhatsAppClick} className="bg-green-600 hover:bg-green-700 text-white text-lg px-8 py-4 shadow-lg">
                 Fale no WhatsApp
               </Button>
             </div>
@@ -72,8 +60,6 @@ const HeroSection = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default HeroSection;
