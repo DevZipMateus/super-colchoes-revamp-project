@@ -1,7 +1,7 @@
 
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardFooter, CardHeader } from '@/components/ui/card';
-import { ShoppingCart, Eye, ArrowLeft } from 'lucide-react';
+import { MessageCircle, ArrowLeft } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
@@ -10,93 +10,69 @@ const Catalog = () => {
   const products = [
     {
       id: 1,
-      name: "Colchão Magnético Castor",
-      description: "Colchão com tecnologia magnética para melhor circulação sanguínea e relaxamento muscular.",
-      price: "R$ 1.299,00",
-      image: ""
+      name: "Colchão Premium com Base",
+      description: "Colchão de alta qualidade com base moderna, ideal para quartos contemporâneos.",
+      image: "/lovable-uploads/b164854d-8791-4e19-a096-161109fab2ed.png"
     },
     {
       id: 2,
-      name: "Pillow TOP 138, 158 e 193 cm",
-      description: "Colchão com camada extra de conforto, disponível em diferentes tamanhos.",
-      price: "R$ 899,00",
-      image: ""
+      name: "Colchões Castor Embalados",
+      description: "Linha completa de colchões Castor com embalagem protetora, garantindo qualidade e higiene.",
+      image: "/lovable-uploads/7ca22c37-9491-430e-9316-2082153f8c53.png"
     },
     {
       id: 3,
-      name: "Sofá‑cama 155x220 cm aberto",
-      description: "Sofá-cama versátil e confortável para ambientes compactos.",
-      price: "R$ 1.599,00",
-      image: ""
+      name: "Conjunto Sofá e Poltrona",
+      description: "Conjunto confortável de sofá e poltrona em couro sintético, perfeito para salas de estar.",
+      image: "/lovable-uploads/ac1fdbd5-6d36-4fb4-9d34-07eed80a2ece.png"
     },
     {
       id: 4,
-      name: "Tecido em malha 3D",
-      description: "Colchão com tecnologia de malha 3D para melhor ventilação.",
-      price: "R$ 749,00",
-      image: ""
+      name: "Colchão Castor Decorativo",
+      description: "Colchão com design elegante e acabamento diferenciado da marca Castor.",
+      image: "/lovable-uploads/3454c7b6-72de-4195-abee-c7114a53d681.png"
     },
     {
       id: 5,
-      name: "Travesseiro Nasa cervical",
-      description: "Travesseiro ortopédico com espuma viscoelástica para apoio cervical.",
-      price: "R$ 199,00",
-      image: ""
+      name: "Colchão com Tecnologia Avançada",
+      description: "Colchão com tecnologia de ponta, oferecendo máximo conforto e suporte para o corpo.",
+      image: "/lovable-uploads/b1841956-fcda-497a-b674-719a06586e4b.png"
     },
     {
       id: 6,
-      name: "Conjunto box maxspring",
-      description: "Conjunto completo com colchão e base box spring de alta qualidade.",
-      price: "R$ 2.199,00",
-      image: ""
+      name: "Colchão Ortopédico Premium",
+      description: "Colchão ortopédico com design especial para proporcionar melhor qualidade do sono.",
+      image: "/lovable-uploads/7ecfcfe2-e8a0-4f1d-8d36-79f29ce33450.png"
     },
     {
       id: 7,
-      name: "Linha exclusiva Castor",
-      description: "Colchões da linha premium Castor com materiais de primeira qualidade.",
-      price: "R$ 1.799,00",
-      image: ""
+      name: "Travesseiro Infantil Koala",
+      description: "Travesseiro especial para crianças com design divertido e materiais hipoalergênicos.",
+      image: "/lovable-uploads/4ea5bcb1-68d1-4c8e-bf38-6f2fd561cdbd.png"
     },
     {
       id: 8,
-      name: "Sofá‑cama e Poltrona reclinável",
-      description: "Conjunto de sofá-cama com poltrona reclinável para máximo conforto.",
-      price: "R$ 2.499,00",
-      image: ""
+      name: "Colchão Padrão Floral",
+      description: "Colchão com estampa floral delicada, combinando conforto e beleza para o quarto.",
+      image: "/lovable-uploads/58a4ef51-b8f8-483a-bf2a-e169548674db.png"
     },
     {
       id: 9,
-      name: "Colchões de espuma ortopédicos",
-      description: "Colchões ortopédicos em espuma de alta densidade para melhor suporte.",
-      price: "R$ 649,00",
-      image: ""
+      name: "Colchão Box Premium",
+      description: "Colchão tipo box com excelente suporte e durabilidade, ideal para uso diário.",
+      image: "/lovable-uploads/57d21732-6c5c-4a1c-bf8f-74c9ae6029f1.png"
     },
     {
       id: 10,
-      name: "Colchão King Size Premium",
-      description: "Colchão king size com molas ensacadas e pillow top integrado.",
-      price: "R$ 3.299,00",
-      image: ""
-    },
-    {
-      id: 11,
-      name: "Base Box Articulada",
-      description: "Base box com sistema de articulação elétrica para maior conforto.",
-      price: "R$ 1.899,00",
-      image: ""
-    },
-    {
-      id: 12,
-      name: "Kit Travesseiros Bambu",
-      description: "Conjunto de travesseiros com fibra de bambu antialérgica.",
-      price: "R$ 299,00",
-      image: ""
+      name: "Conjunto Castor Completo",
+      description: "Conjunto completo da marca Castor com colchão, travesseiros e acessórios coordenados.",
+      image: "/lovable-uploads/46370e64-de6f-4bfe-b37c-27aa129eb636.png"
     }
   ];
 
   const handleWhatsAppClick = (productName: string) => {
     const phoneNumber = "5555991630055";
-    const message = `Olá! Gostaria de saber mais sobre o produto: ${productName}`;
+    const message = `Olá! Gostaria de solicitar um orçamento para o produto: ${productName}`;
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
   };
@@ -131,13 +107,12 @@ const Catalog = () => {
             {products.map((product) => (
               <Card key={product.id} className="h-full hover:shadow-xl transition-shadow duration-300 border-0 shadow-lg">
                 <CardHeader className="p-0">
-                  <div className="bg-gray-100 h-48 rounded-t-lg flex items-center justify-center">
-                    <div className="text-center text-gray-500">
-                      <div className="w-12 h-12 bg-gray-300 rounded-lg mx-auto mb-2 flex items-center justify-center">
-                        <span className="text-gray-600 text-xs font-medium">IMG</span>
-                      </div>
-                      <p className="text-xs">Imagem do produto</p>
-                    </div>
+                  <div className="bg-gray-100 h-48 rounded-t-lg overflow-hidden">
+                    <img 
+                      src={product.image} 
+                      alt={product.name}
+                      className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                    />
                   </div>
                 </CardHeader>
                 
@@ -146,35 +121,25 @@ const Catalog = () => {
                     {product.name}
                   </h3>
                   
-                  <p className="text-gray-600 text-sm line-clamp-3 min-h-[4rem]">
-                    {product.description}
-                  </p>
-                  
-                  <div className="pt-2">
-                    <p className="text-2xl font-bold text-red-600">
-                      {product.price}
+                  {/* Espaço para descrição editável */}
+                  <div className="min-h-[4rem] p-3 bg-gray-50 rounded-lg border-2 border-dashed border-gray-300">
+                    <p className="text-gray-600 text-sm italic">
+                      {product.description}
+                    </p>
+                    <p className="text-xs text-gray-400 mt-2">
+                      * Descrição editável manualmente
                     </p>
                   </div>
                 </CardContent>
 
-                <CardFooter className="p-4 pt-0 space-y-2">
-                  <div className="w-full space-y-2">
-                    <Button 
-                      className="w-full bg-red-600 hover:bg-red-700"
-                      onClick={() => handleWhatsAppClick(product.name)}
-                    >
-                      <ShoppingCart className="w-4 h-4 mr-2" />
-                      Comprar
-                    </Button>
-                    <Button 
-                      variant="outline" 
-                      className="w-full border-gray-300 hover:bg-gray-50"
-                      onClick={() => handleWhatsAppClick(product.name)}
-                    >
-                      <Eye className="w-4 h-4 mr-2" />
-                      Ver mais
-                    </Button>
-                  </div>
+                <CardFooter className="p-4 pt-0">
+                  <Button 
+                    className="w-full bg-green-600 hover:bg-green-700"
+                    onClick={() => handleWhatsAppClick(product.name)}
+                  >
+                    <MessageCircle className="w-4 h-4 mr-2" />
+                    Solicitar Orçamento
+                  </Button>
                 </CardFooter>
               </Card>
             ))}
