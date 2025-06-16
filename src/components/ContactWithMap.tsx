@@ -95,23 +95,7 @@ const ContactWithMap = () => {
 
             {/* WhatsApp Destaque */}
             <Card className="shadow-lg border-0 bg-green-600 text-white hover:shadow-xl transition-shadow cursor-pointer" onClick={handleWhatsAppClick}>
-              <CardContent className="p-6">
-                <div className="text-center space-y-4">
-                  <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto">
-                    <img src="/lovable-uploads/95170b76-0f76-439e-9a3e-8f066ecf1a0b.png" alt="WhatsApp" className="w-10 h-10" />
-                  </div>
-                  <div>
-                    <h3 className="font-bold text-xl mb-2">Atendimento WhatsApp</h3>
-                    <p className="mb-4 opacity-90">
-                      Fale diretamente com nossos especialistas pelo WhatsApp. 
-                      Atendimento rápido e personalizado!
-                    </p>
-                    <Button className="bg-white text-green-600 hover:bg-gray-100" onClick={handleWhatsAppClick}>
-                      Chamar no WhatsApp
-                    </Button>
-                  </div>
-                </div>
-              </CardContent>
+              
             </Card>
           </div>
         </div>
