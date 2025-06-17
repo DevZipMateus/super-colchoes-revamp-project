@@ -1,5 +1,6 @@
 
 import { Button } from '@/components/ui/button';
+import { MapPin } from 'lucide-react';
 
 const HeroSection = () => {
   const phoneNumber = "5555991630055";
@@ -8,6 +9,11 @@ const HeroSection = () => {
   const handleWhatsAppClick = () => {
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
+  };
+
+  const handleMapsClick = () => {
+    const mapsUrl = "https://www.google.com/maps/place/Rua+Riachuelo,+224+-+Centro,+Santa+Maria+-+RS,+97050-010";
+    window.open(mapsUrl, '_blank');
   };
 
   return (
@@ -51,16 +57,28 @@ const HeroSection = () => {
                 </div>
               </div>
 
-              {/* CTA Button - Otimizado */}
-              <div className="flex justify-center lg:justify-start px-2 sm:px-4 md:px-0">
+              {/* CTA Buttons - Otimizado com dois botões lado a lado */}
+              <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start px-2 sm:px-4 md:px-0">
                 <Button 
                   size="lg" 
                   onClick={handleWhatsAppClick} 
-                  className="text-white text-sm sm:text-base md:text-lg xl:text-xl 2xl:text-2xl px-6 sm:px-8 md:px-10 xl:px-12 2xl:px-16 py-3 sm:py-4 md:py-5 xl:py-6 2xl:py-8 shadow-lg w-full sm:w-auto max-w-sm xl:max-w-md 2xl:max-w-lg hover:scale-105 transition-all duration-300" 
+                  className="text-white text-sm sm:text-base md:text-lg xl:text-xl 2xl:text-2xl px-6 sm:px-8 md:px-10 xl:px-12 2xl:px-16 py-3 sm:py-4 md:py-5 xl:py-6 2xl:py-8 shadow-lg flex-1 sm:flex-none hover:scale-105 transition-all duration-300" 
                   style={{ backgroundColor: '#2cf96a' }}
                 >
                   <span className="flex items-center justify-center font-semibold">
                     Fale no WhatsApp
+                  </span>
+                </Button>
+                
+                <Button 
+                  size="lg" 
+                  onClick={handleMapsClick} 
+                  className="text-white text-sm sm:text-base md:text-lg xl:text-xl 2xl:text-2xl px-6 sm:px-8 md:px-10 xl:px-12 2xl:px-16 py-3 sm:py-4 md:py-5 xl:py-6 2xl:py-8 shadow-lg flex-1 sm:flex-none hover:scale-105 transition-all duration-300" 
+                  style={{ backgroundColor: '#3b82f6' }}
+                >
+                  <span className="flex items-center justify-center font-semibold gap-2">
+                    <MapPin className="w-4 h-4 xl:w-5 xl:h-5" />
+                    Como Chegar
                   </span>
                 </Button>
               </div>
