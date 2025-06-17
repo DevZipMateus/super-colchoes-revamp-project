@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import { Menu, X, Phone, Mail, MapPin } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -21,7 +20,7 @@ const Header = () => {
   return (
     <header className="bg-white shadow-lg sticky top-0 z-50">
       {/* Top bar - Oculto em mobile muito pequeno */}
-      <div className="text-white py-2 hidden sm:block" style={{ backgroundColor: '#79a887' }}>
+      <div className="text-white py-2 hidden sm:block" style={{ backgroundColor: '#3b3f3c' }}>
         <div className="container mx-auto px-4">
           <div className="flex flex-col lg:flex-row justify-between items-center text-xs sm:text-sm">
             <div className="flex flex-col sm:flex-row items-center space-y-1 sm:space-y-0 sm:space-x-4">
@@ -65,7 +64,7 @@ const Header = () => {
             <a href="#contato" className="text-gray-700 hover:text-green-800 hover:opacity-40 transition-colors font-medium text-sm xl:text-base">Contato</a>
             <Button 
               className="text-sm xl:text-base px-4 xl:px-6 flex items-center" 
-              style={{ backgroundColor: '#79a887' }} 
+              style={{ backgroundColor: '#3b3f3c' }} 
               onClick={handleWhatsAppClick}
             >
               <img src="/lovable-uploads/ab271b32-cd91-484c-97ce-567483a1d65b.png" alt="WhatsApp" className="w-4 h-4 mr-2" />
@@ -93,7 +92,7 @@ const Header = () => {
               <a href="#contato" className="text-gray-700 hover:text-green-800 hover:opacity-40 transition-colors font-medium py-2 text-sm sm:text-base" onClick={toggleMenu}>Contato</a>
               <Button 
                 className="w-full mt-4 text-sm sm:text-base flex items-center justify-center" 
-                style={{ backgroundColor: '#79a887' }} 
+                style={{ backgroundColor: '#3b3f3c' }} 
                 onClick={handleWhatsAppClick}
               >
                 <img src="/lovable-uploads/ab271b32-cd91-484c-97ce-567483a1d65b.png" alt="WhatsApp" className="w-4 h-4 mr-2" />
