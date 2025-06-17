@@ -1,3 +1,4 @@
+
 import { Button } from '@/components/ui/button';
 import { Star, Shield, Truck, CreditCard } from 'lucide-react';
 const HeroSection = () => {
@@ -7,23 +8,13 @@ const HeroSection = () => {
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
   };
-  return <section className="relative min-h-screen bg-transparent overflow-hidden">
-      {/* Background Image - Responsivo */}
-      <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{
-      backgroundImage: "url('/lovable-uploads/ce28e2ee-777e-43e4-b5b2-9ae17424306e.png')",
-      backgroundSize: 'cover',
-      backgroundPosition: 'center center'
-    }} />
-      
-      {/* Single overlay for better text readability */}
-      <div className="absolute inset-0 bg-black opacity-40" />
-      
+  return <section className="relative min-h-screen bg-white overflow-hidden">
       {/* Content */}
-      <div className="relative z-10 container mx-auto px-4 py-8 sm:py-12 lg:py-20 bg-transparent">
+      <div className="relative z-10 container mx-auto px-4 py-8 sm:py-12 lg:py-20">
         <div className="flex items-center justify-center min-h-[80vh]">
           <div className="text-center space-y-6 sm:space-y-8 max-w-4xl w-full">
             <div className="space-y-3 sm:space-y-4">
-              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight drop-shadow-lg text-zinc-50">
+              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight text-gray-900">
                 <span className="text-5xl text-[#ff0101]">SuperColchões</span>
                 <br />
                 <span className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl">
