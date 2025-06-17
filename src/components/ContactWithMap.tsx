@@ -108,24 +108,17 @@ const ContactWithMap = () => {
               return (
                 <Card 
                   key={index} 
-                  className={`shadow-lg border-0 hover:shadow-xl transition-all duration-300 cursor-pointer p-4 sm:p-6 xl:p-8 2xl:p-10 hover:scale-105 ${
-                    info.highlight ? 'bg-green-50 border-green-200' : ''
-                  }`} 
+                  className="shadow-lg border-0 hover:shadow-xl transition-all duration-300 cursor-pointer p-4 sm:p-6 xl:p-8 2xl:p-10 hover:scale-105"
+                  style={{ backgroundColor: '#E0F4EA' }}
                   onClick={handleWhatsAppClick}
                 >
                   <div className="flex items-center space-x-4 xl:space-x-6">
-                    <div className={`w-12 h-12 xl:w-16 xl:h-16 2xl:w-20 2xl:h-20 rounded-full flex items-center justify-center ${
-                      info.highlight ? 'bg-green-600' : 'bg-gray-100'
-                    }`}>
-                      <IconComponent className={`w-6 h-6 xl:w-8 xl:h-8 2xl:w-10 2xl:h-10 ${
-                        info.highlight ? 'text-white' : 'text-gray-600'
-                      }`} />
+                    <div className="w-12 h-12 xl:w-16 xl:h-16 2xl:w-20 2xl:h-20 rounded-full flex items-center justify-center bg-white">
+                      <IconComponent className="w-6 h-6 xl:w-8 xl:h-8 2xl:w-10 2xl:h-10" style={{ color: '#0DA456' }} />
                     </div>
                     <div className="flex-1">
                       <h3 className="font-semibold text-gray-900 text-sm sm:text-base xl:text-lg 2xl:text-xl">{info.title}</h3>
-                      <p className={`font-bold text-sm sm:text-base xl:text-lg 2xl:text-xl ${
-                        info.highlight ? 'text-green-600' : 'text-gray-800'
-                      }`}>{info.content}</p>
+                      <p className="font-bold text-sm sm:text-base xl:text-lg 2xl:text-xl text-gray-800">{info.content}</p>
                       <p className="text-xs sm:text-sm xl:text-base 2xl:text-lg text-gray-600">{info.subtitle}</p>
                     </div>
                   </div>
