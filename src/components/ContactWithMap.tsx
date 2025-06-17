@@ -57,7 +57,7 @@ const ContactWithMap = () => {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 xl:gap-16 2xl:gap-20">
           {/* Formulário de Contato */}
-          <Card className="shadow-xl border-0 hover:shadow-2xl transition-shadow duration-300">
+          <Card className="shadow-xl border-0 hover:shadow-2xl transition-shadow duration-300" style={{ backgroundColor: '#E0F4EA' }}>
             <CardHeader className="p-6 xl:p-8 2xl:p-10">
               <CardTitle className="text-xl sm:text-2xl xl:text-3xl 2xl:text-4xl text-gray-900 flex items-center">
                 <img src="/lovable-uploads/ab271b32-cd91-484c-97ce-567483a1d65b.png" alt="WhatsApp" className="w-5 sm:w-6 xl:w-8 2xl:w-10 h-5 sm:h-6 xl:h-8 2xl:h-10 mr-2 xl:mr-3" />
