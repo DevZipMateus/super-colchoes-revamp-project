@@ -1,3 +1,4 @@
+
 import { Button } from '@/components/ui/button';
 import { MapPin } from 'lucide-react';
 const HeroSection = () => {
@@ -39,27 +40,27 @@ const HeroSection = () => {
                 </h1>
               </div>
 
-              {/* Promotional Cards - Responsivos */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 xl:grid-cols-3 gap-3 sm:gap-4 md:gap-5 lg:gap-4 xl:gap-6 2xl:gap-8 my-6 sm:my-8 md:my-10 lg:my-12 xl:my-16">
-                <div className="bg-white/95 backdrop-blur-sm p-3 sm:p-4 md:p-5 lg:p-6 xl:p-7 2xl:p-8 rounded-xl shadow-lg border-2 border-green-200 hover:shadow-xl transition-all duration-300 hover:scale-105">
-                  <div className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl font-bold mb-1 sm:mb-2" style={{
+              {/* Promotional Cards - Harmonizados e Proporcionais */}
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-3 md:gap-4 lg:gap-3 xl:gap-4 2xl:gap-6 my-6 sm:my-8 md:my-10 lg:my-12 xl:my-16 max-w-2xl mx-auto lg:mx-0">
+                <div className="bg-white/95 backdrop-blur-sm p-4 sm:p-3 md:p-4 lg:p-4 xl:p-5 2xl:p-6 rounded-xl shadow-lg border-2 border-green-200 hover:shadow-xl transition-all duration-300 hover:scale-105 flex-1 min-h-[120px] sm:min-h-[100px] md:min-h-[110px] lg:min-h-[120px] xl:min-h-[130px] 2xl:min-h-[140px] flex flex-col justify-center items-center text-center">
+                  <div className="text-2xl sm:text-xl md:text-2xl lg:text-2xl xl:text-3xl 2xl:text-4xl font-bold mb-1 sm:mb-1 md:mb-2" style={{
                   color: '#0DA456'
                 }}>12x</div>
-                  <div className="text-sm sm:text-base md:text-lg xl:text-xl 2xl:text-2xl font-semibold text-gray-800">sem juros</div>
+                  <div className="text-sm sm:text-xs md:text-sm lg:text-sm xl:text-base 2xl:text-lg font-semibold text-gray-800 leading-tight">sem juros</div>
                 </div>
                 
-                <div className="bg-white/95 backdrop-blur-sm p-3 sm:p-4 md:p-5 lg:p-6 xl:p-7 2xl:p-8 rounded-xl shadow-lg border-2 border-green-200 hover:shadow-xl transition-all duration-300 hover:scale-105">
-                  <div className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl font-bold mb-1 sm:mb-2" style={{
+                <div className="bg-white/95 backdrop-blur-sm p-4 sm:p-3 md:p-4 lg:p-4 xl:p-5 2xl:p-6 rounded-xl shadow-lg border-2 border-green-200 hover:shadow-xl transition-all duration-300 hover:scale-105 flex-1 min-h-[120px] sm:min-h-[100px] md:min-h-[110px] lg:min-h-[120px] xl:min-h-[130px] 2xl:min-h-[140px] flex flex-col justify-center items-center text-center">
+                  <div className="text-2xl sm:text-xl md:text-2xl lg:text-2xl xl:text-3xl 2xl:text-4xl font-bold mb-1 sm:mb-1 md:mb-2" style={{
                   color: '#0DA456'
                 }}>20%</div>
-                  <div className="text-sm sm:text-base md:text-lg xl:text-xl 2xl:text-2xl font-semibold text-gray-800">de desconto à vista</div>
+                  <div className="text-sm sm:text-xs md:text-sm lg:text-sm xl:text-base 2xl:text-lg font-semibold text-gray-800 leading-tight">desconto à vista</div>
                 </div>
                 
-                <div className="bg-white/95 backdrop-blur-sm p-3 sm:p-4 md:p-5 lg:p-6 xl:p-7 2xl:p-8 rounded-xl shadow-lg border-2 border-blue-200 hover:shadow-xl transition-all duration-300 hover:scale-105 sm:col-span-2 lg:col-span-1 xl:col-span-1">
-                  <div className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl font-bold mb-1 sm:mb-2" style={{
+                <div className="bg-white/95 backdrop-blur-sm p-4 sm:p-3 md:p-4 lg:p-4 xl:p-5 2xl:p-6 rounded-xl shadow-lg border-2 border-green-200 hover:shadow-xl transition-all duration-300 hover:scale-105 flex-1 min-h-[120px] sm:min-h-[100px] md:min-h-[110px] lg:min-h-[120px] xl:min-h-[130px] 2xl:min-h-[140px] flex flex-col justify-center items-center text-center">
+                  <div className="text-2xl sm:text-xl md:text-2xl lg:text-2xl xl:text-3xl 2xl:text-4xl font-bold mb-1 sm:mb-1 md:mb-2" style={{
                   color: '#0DA456'
                 }}>15%</div>
-                  <div className="text-sm sm:text-base md:text-lg xl:text-xl 2xl:text-2xl font-semibold text-gray-800">de desconto a prazo em até 5x</div>
+                  <div className="text-sm sm:text-xs md:text-sm lg:text-sm xl:text-base 2xl:text-lg font-semibold text-gray-800 leading-tight">desconto a prazo<br />em até 5x</div>
                 </div>
               </div>
 
