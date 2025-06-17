@@ -20,7 +20,7 @@ const ServicesSection = () => {
       icon: Ruler,
       title: "Medidas especiais",
       description: "Tenha a cama dos seus sonhos! Traga suas ideias e faça uma cama sob-medida conosco.",
-      color: "text-red-600"
+      color: "text-green-800 opacity-40"
     }
   ];
 
@@ -29,7 +29,7 @@ const ServicesSection = () => {
       <div className="container mx-auto px-4">
         <div className="text-center space-y-4 mb-12 sm:mb-16">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900">
-            Nossos <span className="text-red-600">Serviços</span>
+            Nossos <span className="text-green-800 opacity-40">Serviços</span>
           </h2>
           
           <p className="text-lg sm:text-xl text-gray-600 max-w-4xl mx-auto px-4">

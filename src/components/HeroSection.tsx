@@ -29,7 +29,7 @@ const HeroSection = () => {
                   </span>
                   <span className="block text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl text-zinc-950 leading-relaxed">
                     Especialista em Colchões há mais de{' '}
-                    <span className="font-extrabold text-red-600">20 anos</span>
+                    <span className="font-extrabold text-green-800 opacity-40">20 anos</span>
                   </span>
                 </h1>
               </div>
@@ -41,8 +41,8 @@ const HeroSection = () => {
                   <div className="text-sm sm:text-base md:text-lg font-semibold text-gray-800">sem juros</div>
                 </div>
                 
-                <div className="bg-white/95 backdrop-blur-sm p-3 sm:p-4 md:p-5 lg:p-6 rounded-xl shadow-lg border-2 border-red-200 hover:shadow-xl transition-shadow">
-                  <div className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-red-600 mb-1 sm:mb-2">20%</div>
+                <div className="bg-white/95 backdrop-blur-sm p-3 sm:p-4 md:p-5 lg:p-6 rounded-xl shadow-lg border-2 border-green-200 hover:shadow-xl transition-shadow">
+                  <div className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-green-800 opacity-40 mb-1 sm:mb-2">20%</div>
                   <div className="text-sm sm:text-base md:text-lg font-semibold text-gray-800">de desconto à vista</div>
                 </div>
                 

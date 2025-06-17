@@ -21,7 +21,7 @@ const Header = () => {
   return (
     <header className="bg-white shadow-lg sticky top-0 z-50">
       {/* Top bar - Oculto em mobile muito pequeno */}
-      <div className="bg-red-600 text-white py-2 hidden sm:block">
+      <div className="bg-green-800 opacity-40 text-white py-2 hidden sm:block">
         <div className="container mx-auto px-4">
           <div className="flex flex-col lg:flex-row justify-between items-center text-xs sm:text-sm">
             <div className="flex flex-col sm:flex-row items-center space-y-1 sm:space-y-0 sm:space-x-4">
@@ -58,12 +58,12 @@ const Header = () => {
 
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center space-x-6 xl:space-x-8">
-            <Link to="/" className="text-gray-700 hover:text-red-600 transition-colors font-medium text-sm xl:text-base">Início</Link>
-            <a href="#produtos" className="text-gray-700 hover:text-red-600 transition-colors font-medium text-sm xl:text-base">Produtos</a>
-            <Link to="/catalogo" className="text-gray-700 hover:text-red-600 transition-colors font-medium text-sm xl:text-base">Catálogo</Link>
-            <a href="#sobre" className="text-gray-700 hover:text-red-600 transition-colors font-medium text-sm xl:text-base">Sobre</a>
-            <a href="#contato" className="text-gray-700 hover:text-red-600 transition-colors font-medium text-sm xl:text-base">Contato</a>
-            <Button className="bg-red-600 hover:bg-red-700 text-sm xl:text-base px-4 xl:px-6 flex items-center" onClick={handleWhatsAppClick}>
+            <Link to="/" className="text-gray-700 hover:text-green-800 hover:opacity-40 transition-colors font-medium text-sm xl:text-base">Início</Link>
+            <a href="#produtos" className="text-gray-700 hover:text-green-800 hover:opacity-40 transition-colors font-medium text-sm xl:text-base">Produtos</a>
+            <Link to="/catalogo" className="text-gray-700 hover:text-green-800 hover:opacity-40 transition-colors font-medium text-sm xl:text-base">Catálogo</Link>
+            <a href="#sobre" className="text-gray-700 hover:text-green-800 hover:opacity-40 transition-colors font-medium text-sm xl:text-base">Sobre</a>
+            <a href="#contato" className="text-gray-700 hover:text-green-800 hover:opacity-40 transition-colors font-medium text-sm xl:text-base">Contato</a>
+            <Button className="bg-green-800 opacity-40 hover:bg-green-800 hover:opacity-60 text-sm xl:text-base px-4 xl:px-6 flex items-center" onClick={handleWhatsAppClick}>
               <img src="/lovable-uploads/ab271b32-cd91-484c-97ce-567483a1d65b.png" alt="WhatsApp" className="w-4 h-4 mr-2" />
               Fale Conosco
             </Button>
@@ -82,12 +82,12 @@ const Header = () => {
         {isMenuOpen && (
           <nav className="lg:hidden mt-4 pb-4 border-t border-gray-200">
             <div className="flex flex-col space-y-3 pt-4">
-              <Link to="/" className="text-gray-700 hover:text-red-600 transition-colors font-medium py-2 text-sm sm:text-base" onClick={toggleMenu}>Início</Link>
-              <a href="#produtos" className="text-gray-700 hover:text-red-600 transition-colors font-medium py-2 text-sm sm:text-base" onClick={toggleMenu}>Produtos</a>
-              <Link to="/catalogo" className="text-gray-700 hover:text-red-600 transition-colors font-medium py-2 text-sm sm:text-base" onClick={toggleMenu}>Catálogo</Link>
-              <a href="#sobre" className="text-gray-700 hover:text-red-600 transition-colors font-medium py-2 text-sm sm:text-base" onClick={toggleMenu}>Sobre</a>
-              <a href="#contato" className="text-gray-700 hover:text-red-600 transition-colors font-medium py-2 text-sm sm:text-base" onClick={toggleMenu}>Contato</a>
-              <Button className="bg-red-600 hover:bg-red-700 w-full mt-4 text-sm sm:text-base flex items-center justify-center" onClick={handleWhatsAppClick}>
+              <Link to="/" className="text-gray-700 hover:text-green-800 hover:opacity-40 transition-colors font-medium py-2 text-sm sm:text-base" onClick={toggleMenu}>Início</Link>
+              <a href="#produtos" className="text-gray-700 hover:text-green-800 hover:opacity-40 transition-colors font-medium py-2 text-sm sm:text-base" onClick={toggleMenu}>Produtos</a>
+              <Link to="/catalogo" className="text-gray-700 hover:text-green-800 hover:opacity-40 transition-colors font-medium py-2 text-sm sm:text-base" onClick={toggleMenu}>Catálogo</Link>
+              <a href="#sobre" className="text-gray-700 hover:text-green-800 hover:opacity-40 transition-colors font-medium py-2 text-sm sm:text-base" onClick={toggleMenu}>Sobre</a>
+              <a href="#contato" className="text-gray-700 hover:text-green-800 hover:opacity-40 transition-colors font-medium py-2 text-sm sm:text-base" onClick={toggleMenu}>Contato</a>
+              <Button className="bg-green-800 opacity-40 hover:bg-green-800 hover:opacity-60 w-full mt-4 text-sm sm:text-base flex items-center justify-center" onClick={handleWhatsAppClick}>
                 <img src="/lovable-uploads/ab271b32-cd91-484c-97ce-567483a1d65b.png" alt="WhatsApp" className="w-4 h-4 mr-2" />
                 Fale Conosco
               </Button>

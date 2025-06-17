@@ -39,7 +39,7 @@ const TestimonialsSection = () => {
       <div className="container mx-auto px-4">
         <div className="text-center space-y-4 mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold text-gray-900">
-            O que nossos <span className="text-red-600">Clientes</span> dizem
+            O que nossos <span className="text-green-800 opacity-40">Clientes</span> dizem
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Depoimentos reais de clientes satisfeitos com nossos produtos e atendimento
@@ -65,7 +65,7 @@ const TestimonialsSection = () => {
                       <Star key={i} className="w-4 h-4 fill-yellow-400 text-yellow-400" />
                     ))}
                   </div>
-                  <Quote className="w-6 h-6 text-red-600" />
+                  <Quote className="w-6 h-6 text-green-800 opacity-40" />
                 </div>
                 
                 <p className="text-gray-700 leading-relaxed italic">
@@ -74,8 +74,8 @@ const TestimonialsSection = () => {
                 
                 <div className="border-t pt-4">
                   <div className="flex items-center space-x-3">
-                    <div className="w-12 h-12 bg-red-100 rounded-full flex items-center justify-center">
-                      <span className="text-red-600 font-bold text-lg">
+                    <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center">
+                      <span className="text-green-800 opacity-40 font-bold text-lg">
                         {testimonial.name.charAt(0)}
                       </span>
                     </div>
@@ -95,11 +95,11 @@ const TestimonialsSection = () => {
           <p className="text-lg text-gray-600 mb-6">
             Junte-se aos nossos clientes satisfeitos!
           </p>
-          <div className="bg-red-50 rounded-2xl p-8 max-w-2xl mx-auto">
-            <h3 className="text-2xl font-bold text-red-800 mb-4">
+          <div className="bg-green-50 rounded-2xl p-8 max-w-2xl mx-auto">
+            <h3 className="text-2xl font-bold text-green-800 opacity-40 mb-4">
               Garantia de Satisfação 100%
             </h3>
-            <p className="text-red-700">
+            <p className="text-green-700">
               Se não ficar satisfeito com seu colchão, oferecemos garantia e suporte completo para sua satisfação!
             </p>
           </div>
