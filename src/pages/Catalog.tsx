@@ -1,6 +1,7 @@
+
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardFooter, CardHeader } from '@/components/ui/card';
-import { MessageCircle, ArrowLeft, Edit2, Check, X } from 'lucide-react';
+import { ArrowLeft, Edit2, Check, X } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
@@ -242,7 +243,7 @@ const Catalog = () => {
 
                 <CardFooter className="p-4 pt-0">
                   <Button className="w-full bg-green-600 hover:bg-green-700" onClick={() => handleWhatsAppClick(product.name)}>
-                    <MessageCircle className="w-4 h-4 mr-2" />
+                    <img src="/lovable-uploads/b8705ef6-e877-4933-8622-ecd2701b89f9.png" alt="WhatsApp" className="w-4 h-4 mr-2" />
                     Solicitar Orçamento
                   </Button>
                 </CardFooter>
