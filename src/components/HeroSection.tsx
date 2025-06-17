@@ -42,17 +42,17 @@ const HeroSection = () => {
               {/* Promotional Cards - Responsivos */}
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 xl:grid-cols-3 gap-3 sm:gap-4 md:gap-5 lg:gap-4 xl:gap-6 2xl:gap-8 my-6 sm:my-8 md:my-10 lg:my-12 xl:my-16">
                 <div className="bg-white/95 backdrop-blur-sm p-3 sm:p-4 md:p-5 lg:p-6 xl:p-7 2xl:p-8 rounded-xl shadow-lg border-2 border-green-200 hover:shadow-xl transition-all duration-300 hover:scale-105">
-                  <div className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl font-bold text-green-600 mb-1 sm:mb-2">12x</div>
+                  <div className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl font-bold mb-1 sm:mb-2" style={{ color: '#0DA456' }}>12x</div>
                   <div className="text-sm sm:text-base md:text-lg xl:text-xl 2xl:text-2xl font-semibold text-gray-800">sem juros</div>
                 </div>
                 
                 <div className="bg-white/95 backdrop-blur-sm p-3 sm:p-4 md:p-5 lg:p-6 xl:p-7 2xl:p-8 rounded-xl shadow-lg border-2 border-green-200 hover:shadow-xl transition-all duration-300 hover:scale-105">
-                  <div className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl font-bold mb-1 sm:mb-2" style={{ color: '#000000' }}>20%</div>
+                  <div className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl font-bold mb-1 sm:mb-2" style={{ color: '#0DA456' }}>20%</div>
                   <div className="text-sm sm:text-base md:text-lg xl:text-xl 2xl:text-2xl font-semibold text-gray-800">de desconto à vista</div>
                 </div>
                 
                 <div className="bg-white/95 backdrop-blur-sm p-3 sm:p-4 md:p-5 lg:p-6 xl:p-7 2xl:p-8 rounded-xl shadow-lg border-2 border-blue-200 hover:shadow-xl transition-all duration-300 hover:scale-105 sm:col-span-2 lg:col-span-1 xl:col-span-1">
-                  <div className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl font-bold text-blue-600 mb-1 sm:mb-2">15%</div>
+                  <div className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl font-bold mb-1 sm:mb-2" style={{ color: '#0DA456' }}>15%</div>
                   <div className="text-sm sm:text-base md:text-lg xl:text-xl 2xl:text-2xl font-semibold text-gray-800">de desconto a prazo em até 5x</div>
                 </div>
               </div>
@@ -63,7 +63,7 @@ const HeroSection = () => {
                   size="lg" 
                   onClick={handleWhatsAppClick} 
                   className="text-white text-sm sm:text-base md:text-lg xl:text-xl 2xl:text-2xl px-6 sm:px-8 md:px-10 xl:px-12 2xl:px-16 py-3 sm:py-4 md:py-5 xl:py-6 2xl:py-8 shadow-lg flex-1 sm:flex-none hover:scale-105 transition-all duration-300" 
-                  style={{ backgroundColor: '#2cf96a' }}
+                  style={{ backgroundColor: '#0DA456' }}
                 >
                   <span className="flex items-center justify-center font-semibold">
                     Fale no WhatsApp
@@ -73,8 +73,8 @@ const HeroSection = () => {
                 <Button 
                   size="lg" 
                   onClick={handleMapsClick} 
-                  className="text-white text-sm sm:text-base md:text-lg xl:text-xl 2xl:text-2xl px-6 sm:px-8 md:px-10 xl:px-12 2xl:px-16 py-3 sm:py-4 md:py-5 xl:py-6 2xl:py-8 shadow-lg flex-1 sm:flex-none hover:scale-105 transition-all duration-300" 
-                  style={{ backgroundColor: '#3b82f6' }}
+                  className="text-gray-800 text-sm sm:text-base md:text-lg xl:text-xl 2xl:text-2xl px-6 sm:px-8 md:px-10 xl:px-12 2xl:px-16 py-3 sm:py-4 md:py-5 xl:py-6 2xl:py-8 shadow-lg flex-1 sm:flex-none hover:scale-105 transition-all duration-300" 
+                  style={{ backgroundColor: '#E0F4EA' }}
                 >
                   <span className="flex items-center justify-center font-semibold gap-2">
                     <MapPin className="w-4 h-4 xl:w-5 xl:h-5" />
