@@ -1,4 +1,3 @@
-
 import { Button } from '@/components/ui/button';
 import { Star, Shield, Truck, CreditCard } from 'lucide-react';
 const HeroSection = () => {
@@ -15,11 +14,11 @@ const HeroSection = () => {
           <div className="text-center space-y-6 sm:space-y-8 max-w-4xl w-full">
             <div className="space-y-3 sm:space-y-4">
               <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight text-gray-900">
-                <span className="text-5xl text-[#ff0101]">SuperColchões</span>
+                <span className="text-5xl text-zinc-950">SuperColchões</span>
                 <br />
-                <span className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl">
+                <span className="text-lg sm:text-xl lg:text-3xl xl:text-4xl text-zinc-950 md:text-4xl">
                   Especialista em Colchões há mais de{' '}
-                  <span className="text-[#1af00c]">20 anos</span>
+                  <span className="text-zinc-950">20 anos</span>
                 </span>
               </h1>
             </div>
