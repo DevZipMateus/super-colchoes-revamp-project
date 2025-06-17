@@ -1,4 +1,3 @@
-
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardFooter, CardHeader } from '@/components/ui/card';
 import { ArrowLeft, Edit2, Check, X } from 'lucide-react';
@@ -190,12 +189,12 @@ const Catalog = () => {
           {/* Header */}
           <div className="flex items-center justify-between mb-8">
             <div>
-              <Link to="/" className="inline-flex items-center text-red-600 hover:text-red-700 mb-4">
+              <Link to="/" className="inline-flex items-center text-gray-900 hover:text-gray-700 mb-4">
                 <ArrowLeft className="w-4 h-4 mr-2" />
                 Voltar ao início
               </Link>
               <h1 className="text-4xl lg:text-5xl font-bold text-gray-900">
-                Catálogo <span className="text-red-600">Completo</span>
+                Catálogo <span className="text-gray-900">Completo</span>
               </h1>
               <p className="text-xl text-gray-600 mt-4">
                 Todos os nossos produtos para o seu conforto e bem-estar
@@ -226,7 +225,7 @@ const Catalog = () => {
                           <button onClick={() => saveEdit(product.id)} className="p-1 text-green-600 hover:text-green-700">
                             <Check className="w-4 h-4" />
                           </button>
-                          <button onClick={cancelEdit} className="p-1 text-red-600 hover:text-red-700">
+                          <button onClick={cancelEdit} className="p-1 text-gray-900 hover:text-gray-700">
                             <X className="w-4 h-4" />
                           </button>
                         </div>
