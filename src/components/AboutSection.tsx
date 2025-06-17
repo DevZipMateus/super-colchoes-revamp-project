@@ -10,19 +10,36 @@ const AboutSection = () => {
             <span className="text-zinc-950" style={{ color: '#000000' }}>Sobre</span>
           </h2>
           
-          <div className="text-lg sm:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl text-gray-700 leading-relaxed space-y-6 sm:space-y-8 xl:space-y-10">
-            <p className="text-zinc-950">
-              Há <span className="font-bold text-gray-950" style={{ color: '#000000' }}>39 anos</span> cuidando do bem-estar e qualidade de vida de nossos clientes. 
-              A <span className="font-bold text-gray-950" style={{ color: '#000000' }}>Super Colchões</span> investe em produtos de alta qualidade, requinte e conforto.
-            </p>
+          {/* Layout dividido: imagem à esquerda, texto à direita */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 xl:gap-12 2xl:gap-16 items-center">
+            {/* Imagem à esquerda */}
+            <div className="flex justify-center lg:justify-start">
+              <div className="w-full max-w-md xl:max-w-lg 2xl:max-w-xl">
+                <img 
+                  src="/lovable-uploads/d97b8f3d-8edf-451b-8d23-af08e762a597.png" 
+                  alt="Colchão de molas Maxspring Multimoleio"
+                  className="w-full h-auto rounded-lg shadow-lg"
+                />
+              </div>
+            </div>
             
-            <p className="text-gray-950">
-              Pioneira no ramo de colchões em <span className="font-bold text-gray-950">Santa Maria-RS</span>, 
-              dispomos de produtos multimarcas, atendimento diferenciado e exclusivo.
-            </p>
+            {/* Texto à direita */}
+            <div className="text-left space-y-6 xl:space-y-8">
+              <div className="text-lg sm:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl text-gray-700 leading-relaxed space-y-6 sm:space-y-8 xl:space-y-10">
+                <p className="text-zinc-950">
+                  Há <span className="font-bold text-gray-950" style={{ color: '#000000' }}>39 anos</span> cuidando do bem-estar e qualidade de vida de nossos clientes. 
+                  A <span className="font-bold text-gray-950" style={{ color: '#000000' }}>Super Colchões</span> investe em produtos de alta qualidade, requinte e conforto.
+                </p>
+                
+                <p className="text-gray-950">
+                  Pioneira no ramo de colchões em <span className="font-bold text-gray-950">Santa Maria-RS</span>, 
+                  dispomos de produtos multimarcas, atendimento diferenciado e exclusivo.
+                </p>
+              </div>
+            </div>
           </div>
 
-          {/* Seção de valores - Adicionada para melhor uso do espaço em 1920x1080 */}
+          {/* Seção de valores */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 xl:gap-10 2xl:gap-12 mt-12 xl:mt-16 2xl:mt-20">
             <div className="text-center space-y-3 xl:space-y-4">
               <div className="w-16 h-16 xl:w-20 xl:h-20 2xl:w-24 2xl:h-24 mx-auto bg-green-100 rounded-full flex items-center justify-center">
