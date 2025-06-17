@@ -1,18 +1,13 @@
-
 import { Button } from '@/components/ui/button';
 import { Star, Shield, Truck, CreditCard } from 'lucide-react';
-
 const HeroSection = () => {
   const phoneNumber = "5555991630055";
   const message = "Olá! Gostaria de saber mais sobre os colchões da SuperColchões.";
-  
   const handleWhatsAppClick = () => {
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
   };
-
-  return (
-    <section className="relative min-h-screen bg-white overflow-hidden">
+  return <section className="relative min-h-screen bg-white overflow-hidden">
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 py-6 sm:py-8 md:py-12 lg:py-16 xl:py-20">
         <div className="flex items-center justify-center min-h-[calc(100vh-theme(spacing.32))] sm:min-h-[calc(100vh-theme(spacing.40))] lg:min-h-[80vh]">
@@ -29,7 +24,9 @@ const HeroSection = () => {
                   </span>
                   <span className="block text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl text-zinc-950 leading-relaxed">
                     Especialista em Colchões há mais de{' '}
-                    <span className="font-extrabold" style={{ color: '#2cf96a' }}>20 anos</span>
+                    <span style={{
+                    color: '#2cf96a'
+                  }} className="font-extrabold text-gray-950">20 anos</span>
                   </span>
                 </h1>
               </div>
@@ -42,7 +39,9 @@ const HeroSection = () => {
                 </div>
                 
                 <div className="bg-white/95 backdrop-blur-sm p-3 sm:p-4 md:p-5 lg:p-6 rounded-xl shadow-lg border-2 border-green-200 hover:shadow-xl transition-shadow">
-                  <div className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold mb-1 sm:mb-2" style={{ color: '#2cf96a' }}>20%</div>
+                  <div className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold mb-1 sm:mb-2" style={{
+                  color: '#2cf96a'
+                }}>20%</div>
                   <div className="text-sm sm:text-base md:text-lg font-semibold text-gray-800">de desconto à vista</div>
                 </div>
                 
@@ -54,12 +53,9 @@ const HeroSection = () => {
 
               {/* CTA Button */}
               <div className="flex justify-center lg:justify-start px-2 sm:px-4 md:px-0">
-                <Button 
-                  size="lg" 
-                  onClick={handleWhatsAppClick} 
-                  className="text-white text-sm sm:text-base md:text-lg px-6 sm:px-8 md:px-10 py-3 sm:py-4 md:py-5 shadow-lg w-full sm:w-auto max-w-sm hover:scale-105 transition-all duration-300"
-                  style={{ backgroundColor: '#2cf96a' }}
-                >
+                <Button size="lg" onClick={handleWhatsAppClick} className="text-white text-sm sm:text-base md:text-lg px-6 sm:px-8 md:px-10 py-3 sm:py-4 md:py-5 shadow-lg w-full sm:w-auto max-w-sm hover:scale-105 transition-all duration-300" style={{
+                backgroundColor: '#2cf96a'
+              }}>
                   <span className="flex items-center justify-center">
                     Fale no WhatsApp
                   </span>
@@ -95,8 +91,6 @@ const HeroSection = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default HeroSection;
