@@ -47,7 +47,7 @@ const ContactWithMap = () => {
       <div className="container mx-auto px-4">
         <div className="text-center space-y-4 mb-12 sm:mb-16">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900">
-            Fale <span style={{ color: '#2cf96a' }} className="text-gray-950">Conosco</span>
+            Fale <span className="text-gray-950" style={{ color: '#2cf96a' }}>Conosco</span>
           </h2>
           <p className="text-lg sm:text-xl max-w-3xl mx-auto px-4 text-gray-950">
             Estamos aqui para ajudar você a encontrar o colchão perfeito. 
@@ -72,8 +72,8 @@ const ContactWithMap = () => {
                 <label className="text-sm font-medium text-gray-700">Nome Completo *</label>
                 <Input 
                   placeholder="Seu nome completo" 
-                  className="border-gray-300 focus:border-[#2cf96a] focus:ring-[#2cf96a]"
-                  style={{ borderColor: '#2cf96a' }}
+                  className="border-gray-300"
+                  style={{ borderColor: '#2cf96a', '--tw-ring-color': '#2cf96a' } as React.CSSProperties}
                 />
               </div>
               
@@ -82,8 +82,8 @@ const ContactWithMap = () => {
                 <Textarea 
                   placeholder="Conte-nos sobre suas necessidades, orçamento, preferências..." 
                   rows={4} 
-                  className="border-gray-300 focus:border-[#2cf96a] focus:ring-[#2cf96a]"
-                  style={{ borderColor: '#2cf96a' }}
+                  className="border-gray-300"
+                  style={{ borderColor: '#2cf96a', '--tw-ring-color': '#2cf96a' } as React.CSSProperties}
                 />
               </div>
               

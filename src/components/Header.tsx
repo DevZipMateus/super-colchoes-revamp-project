@@ -63,7 +63,11 @@ const Header = () => {
             <Link to="/catalogo" className="text-gray-700 hover:text-green-800 hover:opacity-40 transition-colors font-medium text-sm xl:text-base">Catálogo</Link>
             <a href="#sobre" className="text-gray-700 hover:text-green-800 hover:opacity-40 transition-colors font-medium text-sm xl:text-base">Sobre</a>
             <a href="#contato" className="text-gray-700 hover:text-green-800 hover:opacity-40 transition-colors font-medium text-sm xl:text-base">Contato</a>
-            <Button className="text-sm xl:text-base px-4 xl:px-6 flex items-center" style={{ backgroundColor: '#2cf96a' }} onClick={handleWhatsAppClick}>
+            <Button 
+              className="text-sm xl:text-base px-4 xl:px-6 flex items-center" 
+              style={{ backgroundColor: '#2cf96a' }} 
+              onClick={handleWhatsAppClick}
+            >
               <img src="/lovable-uploads/ab271b32-cd91-484c-97ce-567483a1d65b.png" alt="WhatsApp" className="w-4 h-4 mr-2" />
               Fale Conosco
             </Button>
@@ -87,7 +91,11 @@ const Header = () => {
               <Link to="/catalogo" className="text-gray-700 hover:text-green-800 hover:opacity-40 transition-colors font-medium py-2 text-sm sm:text-base" onClick={toggleMenu}>Catálogo</Link>
               <a href="#sobre" className="text-gray-700 hover:text-green-800 hover:opacity-40 transition-colors font-medium py-2 text-sm sm:text-base" onClick={toggleMenu}>Sobre</a>
               <a href="#contato" className="text-gray-700 hover:text-green-800 hover:opacity-40 transition-colors font-medium py-2 text-sm sm:text-base" onClick={toggleMenu}>Contato</a>
-              <Button className="w-full mt-4 text-sm sm:text-base flex items-center justify-center" style={{ backgroundColor: '#2cf96a' }} onClick={handleWhatsAppClick}>
+              <Button 
+                className="w-full mt-4 text-sm sm:text-base flex items-center justify-center" 
+                style={{ backgroundColor: '#2cf96a' }} 
+                onClick={handleWhatsAppClick}
+              >
                 <img src="/lovable-uploads/ab271b32-cd91-484c-97ce-567483a1d65b.png" alt="WhatsApp" className="w-4 h-4 mr-2" />
                 Fale Conosco
               </Button>
