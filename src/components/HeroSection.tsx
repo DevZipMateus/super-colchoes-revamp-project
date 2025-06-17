@@ -11,9 +11,11 @@ const HeroSection = () => {
     window.open(whatsappUrl, '_blank');
   };
 
-  const handleMapsClick = () => {
-    const mapsUrl = "https://www.google.com/maps/place/Rua+Riachuelo,+224+-+Centro,+Santa+Maria+-+RS,+97050-010";
-    window.open(mapsUrl, '_blank');
+  const handleMapClick = () => {
+    const mapSection = document.getElementById('mapa');
+    if (mapSection) {
+      mapSection.scrollIntoView({ behavior: 'smooth' });
+    }
   };
 
   return (
@@ -72,7 +74,7 @@ const HeroSection = () => {
                 
                 <Button 
                   size="lg" 
-                  onClick={handleMapsClick} 
+                  onClick={handleMapClick} 
                   className="text-gray-800 text-sm sm:text-base md:text-lg xl:text-xl 2xl:text-2xl px-6 sm:px-8 md:px-10 xl:px-12 2xl:px-16 py-3 sm:py-4 md:py-5 xl:py-6 2xl:py-8 shadow-lg flex-1 sm:flex-none hover:scale-105 transition-all duration-300" 
                   style={{ backgroundColor: '#E0F4EA' }}
                 >
