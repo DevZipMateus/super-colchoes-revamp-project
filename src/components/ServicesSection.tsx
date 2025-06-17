@@ -20,7 +20,7 @@ const ServicesSection = () => {
       icon: Ruler,
       title: "Medidas especiais",
       description: "Tenha a cama dos seus sonhos! Traga suas ideias e faça uma cama sob-medida conosco.",
-      color: "text-green-800 opacity-40"
+      color: "#2cf96a"
     }
   ];
 
@@ -29,7 +29,7 @@ const ServicesSection = () => {
       <div className="container mx-auto px-4">
         <div className="text-center space-y-4 mb-12 sm:mb-16">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900">
-            Nossos <span className="text-green-800 opacity-40">Serviços</span>
+            Nossos <span style={{ color: '#2cf96a' }}>Serviços</span>
           </h2>
           
           <p className="text-lg sm:text-xl text-gray-600 max-w-4xl mx-auto px-4">
@@ -44,7 +44,7 @@ const ServicesSection = () => {
               <Card key={index} className="hover:shadow-xl transition-all duration-300 border-0 shadow-lg group h-full">
                 <CardHeader className="text-center pb-4">
                   <div className={`w-14 sm:w-16 h-14 sm:h-16 mx-auto mb-4 rounded-full bg-gray-100 flex items-center justify-center group-hover:scale-110 transition-transform duration-300`}>
-                    <IconComponent className={`w-7 sm:w-8 h-7 sm:h-8 ${service.color}`} />
+                    <IconComponent className={`w-7 sm:w-8 h-7 sm:h-8`} style={{ color: service.color }} />
                   </div>
                   <CardTitle className="text-lg sm:text-xl font-bold text-gray-900 leading-tight">
                     {service.title}

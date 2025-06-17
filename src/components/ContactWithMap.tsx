@@ -47,7 +47,7 @@ const ContactWithMap = () => {
       <div className="container mx-auto px-4">
         <div className="text-center space-y-4 mb-12 sm:mb-16">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900">
-            Fale <span className="text-green-800 opacity-40">Conosco</span>
+            Fale <span style={{ color: '#2cf96a' }}>Conosco</span>
           </h2>
           <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto px-4">
             Estamos aqui para ajudar você a encontrar o colchão perfeito. 
@@ -70,15 +70,15 @@ const ContactWithMap = () => {
             <CardContent className="space-y-4 sm:space-y-6">
               <div className="space-y-2">
                 <label className="text-sm font-medium text-gray-700">Nome Completo *</label>
-                <Input placeholder="Seu nome completo" className="border-gray-300 focus:border-green-800 opacity-40" />
+                <Input placeholder="Seu nome completo" className="border-gray-300" style={{ borderColor: '#2cf96a', focusBorderColor: '#2cf96a' }} />
               </div>
               
               <div className="space-y-2">
                 <label className="text-sm font-medium text-gray-700">Mensagem</label>
-                <Textarea placeholder="Conte-nos sobre suas necessidades, orçamento, preferências..." rows={4} className="border-gray-300 focus:border-green-800 opacity-40" />
+                <Textarea placeholder="Conte-nos sobre suas necessidades, orçamento, preferências..." rows={4} className="border-gray-300" style={{ borderColor: '#2cf96a', focusBorderColor: '#2cf96a' }} />
               </div>
               
-              <Button className="w-full bg-green-800 opacity-40 hover:bg-green-800 hover:opacity-60 text-base sm:text-lg py-3" onClick={handleWhatsAppClick}>
+              <Button className="w-full text-base sm:text-lg py-3" style={{ backgroundColor: '#2cf96a' }} onClick={handleWhatsAppClick}>
                 Enviar Solicitação
               </Button>
               

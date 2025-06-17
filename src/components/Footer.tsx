@@ -21,13 +21,13 @@ const Footer = () => {
               </p>
             </div>
             <div className="flex space-x-4">
-              <a href="https://www.facebook.com/supercolchoesumaescolhainteligente" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-green-800 opacity-40 rounded-full flex items-center justify-center hover:bg-green-800 hover:opacity-60 transition-colors">
+              <a href="https://www.facebook.com/supercolchoesumaescolhainteligente" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full flex items-center justify-center hover:opacity-60 transition-colors" style={{ backgroundColor: '#2cf96a' }}>
                 <Facebook className="w-5 h-5" />
               </a>
-              <a href="https://www.instagram.com/super_colchoes/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-green-800 opacity-40 rounded-full flex items-center justify-center hover:bg-green-800 hover:opacity-60 transition-colors">
+              <a href="https://www.instagram.com/super_colchoes/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full flex items-center justify-center hover:opacity-60 transition-colors" style={{ backgroundColor: '#2cf96a' }}>
                 <Instagram className="w-5 h-5" />
               </a>
-              <a href="https://www.youtube.com/channel/UCtNbeMmIUFsQ8jSULkOYIcQ" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-green-800 opacity-40 rounded-full flex items-center justify-center hover:bg-green-800 hover:opacity-60 transition-colors">
+              <a href="https://www.youtube.com/channel/UCtNbeMmIUFsQ8jSULkOYIcQ" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full flex items-center justify-center hover:opacity-60 transition-colors" style={{ backgroundColor: '#2cf96a' }}>
                 <Youtube className="w-5 h-5" />
               </a>
               <button onClick={handleWhatsAppClick} className="w-10 h-10 bg-green-500 rounded-full flex items-center justify-center hover:bg-green-600 transition-colors">
@@ -56,7 +56,7 @@ const Footer = () => {
             <h4 className="text-lg font-bold mb-4">Contato</h4>
             <div className="space-y-3">
               <div className="flex items-center space-x-3 cursor-pointer hover:text-green-800 hover:opacity-40 transition-colors" onClick={handleWhatsAppClick}>
-                <Phone className="w-5 h-5 text-green-800 opacity-40" />
+                <Phone className="w-5 h-5" style={{ color: '#2cf96a' }} />
                 <span className="text-gray-300">(55) 3221-8035</span>
               </div>
               <div className="flex items-center space-x-3 cursor-pointer hover:text-green-400 transition-colors" onClick={handleWhatsAppClick}>
@@ -64,11 +64,11 @@ const Footer = () => {
                 <span className="text-gray-300">(55) 99163-0055</span>
               </div>
               <div className="flex items-center space-x-3 cursor-pointer hover:text-green-800 hover:opacity-40 transition-colors" onClick={handleWhatsAppClick}>
-                <Mail className="w-5 h-5 text-green-800 opacity-40" />
+                <Mail className="w-5 h-5" style={{ color: '#2cf96a' }} />
                 <span className="text-gray-300">supercolchoes@yahoo.com.br</span>
               </div>
               <div className="flex items-start space-x-3">
-                <MapPin className="w-5 h-5 text-green-800 opacity-40 mt-1" />
+                <MapPin className="w-5 h-5 mt-1" style={{ color: '#2cf96a' }} />
                 <span className="text-gray-300">
                   Rua Riachuelo, 224<br />
                   Esq. Tuiuti<br />
