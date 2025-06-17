@@ -1,55 +1,44 @@
-
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Phone, Mail, MapPin, Clock } from 'lucide-react';
-
 const ContactWithMap = () => {
   const phoneNumber = "5555991630055";
   const message = "Olá! Gostaria de saber mais sobre os colchões da SuperColchões.";
-  
   const handleWhatsAppClick = () => {
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
   };
-
-  const contactInfo = [
-    {
-      icon: Phone,
-      title: "Telefone Fixo",
-      content: "(55) 3221-8035",
-      subtitle: "Atendimento de Segunda a Sábado"
-    },
-    {
-      icon: Phone,
-      title: "WhatsApp",
-      content: "(55) 99163-0055",
-      subtitle: "Atendimento rápido e personalizado",
-      highlight: true
-    },
-    {
-      icon: Mail,
-      title: "E-mail",
-      content: "supercolchoes@yahoo.com.br",
-      subtitle: "Respondemos em até 4 horas"
-    },
-    {
-      icon: MapPin,
-      title: "Endereço",
-      content: "Rua Riachuelo, 224 - Esq. Tuiuti",
-      subtitle: "Santa Maria, RS - CEP 97050-010"
-    }
-  ];
-
-  return (
-    <section className="py-12 sm:py-16 lg:py-24 bg-white">
+  const contactInfo = [{
+    icon: Phone,
+    title: "Telefone Fixo",
+    content: "(55) 3221-8035",
+    subtitle: "Atendimento de Segunda a Sábado"
+  }, {
+    icon: Phone,
+    title: "WhatsApp",
+    content: "(55) 99163-0055",
+    subtitle: "Atendimento rápido e personalizado",
+    highlight: true
+  }, {
+    icon: Mail,
+    title: "E-mail",
+    content: "supercolchoes@yahoo.com.br",
+    subtitle: "Respondemos em até 4 horas"
+  }, {
+    icon: MapPin,
+    title: "Endereço",
+    content: "Rua Riachuelo, 224 - Esq. Tuiuti",
+    subtitle: "Santa Maria, RS - CEP 97050-010"
+  }];
+  return <section className="py-12 sm:py-16 lg:py-24 bg-white">
       <div className="container mx-auto px-4">
         <div className="text-center space-y-4 mb-12 sm:mb-16">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-black">
-            Fale <span className="text-green-600 opacity-60">Conosco</span>
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900">
+            Fale <span className="text-red-600">Conosco</span>
           </h2>
-          <p className="text-lg sm:text-xl text-black max-w-3xl mx-auto px-4">
+          <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto px-4">
             Estamos aqui para ajudar você a encontrar o colchão perfeito. 
             Entre em contato conosco e receba atendimento especializado.
           </p>
@@ -59,30 +48,30 @@ const ContactWithMap = () => {
           {/* Formulário de Contato */}
           <Card className="shadow-xl border-0">
             <CardHeader>
-              <CardTitle className="text-xl sm:text-2xl text-black flex items-center">
+              <CardTitle className="text-xl sm:text-2xl text-gray-900 flex items-center">
                 <img src="/lovable-uploads/ab271b32-cd91-484c-97ce-567483a1d65b.png" alt="WhatsApp" className="w-5 sm:w-6 h-5 sm:h-6 mr-2" />
                 Solicite um Orçamento
               </CardTitle>
-              <p className="text-black text-sm sm:text-base">
+              <p className="text-gray-600 text-sm sm:text-base">
                 Preencha os dados abaixo e nossa equipe entrará em contato
               </p>
             </CardHeader>
             <CardContent className="space-y-4 sm:space-y-6">
               <div className="space-y-2">
-                <label className="text-sm font-medium text-black">Nome Completo *</label>
-                <Input placeholder="Seu nome completo" className="border-gray-300 focus:border-green-500" />
+                <label className="text-sm font-medium text-gray-700">Nome Completo *</label>
+                <Input placeholder="Seu nome completo" className="border-gray-300 focus:border-red-500" />
               </div>
               
               <div className="space-y-2">
-                <label className="text-sm font-medium text-black">Mensagem</label>
-                <Textarea placeholder="Conte-nos sobre suas necessidades, orçamento, preferências..." rows={4} className="border-gray-300 focus:border-green-500" />
+                <label className="text-sm font-medium text-gray-700">Mensagem</label>
+                <Textarea placeholder="Conte-nos sobre suas necessidades, orçamento, preferências..." rows={4} className="border-gray-300 focus:border-red-500" />
               </div>
               
-              <Button className="w-full bg-green-600 opacity-60 hover:bg-green-700 hover:opacity-60 text-black text-base sm:text-lg py-3" onClick={handleWhatsAppClick}>
+              <Button className="w-full bg-red-600 hover:bg-red-700 text-base sm:text-lg py-3" onClick={handleWhatsAppClick}>
                 Enviar Solicitação
               </Button>
               
-              <p className="text-xs sm:text-sm text-black text-center">
+              <p className="text-xs sm:text-sm text-gray-600 text-center">
                 * Campos obrigatórios. Responderemos em até 2 horas úteis.
               </p>
             </CardContent>
@@ -91,58 +80,49 @@ const ContactWithMap = () => {
           {/* Informações de Contato */}
           <div className="space-y-4 sm:space-y-6">
             {contactInfo.map((info, index) => {
-              const IconComponent = info.icon;
-              return (
-                <Card key={index} className={`shadow-lg border-0 hover:shadow-xl transition-shadow cursor-pointer p-4 sm:p-6 ${info.highlight ? 'bg-green-50 border-green-200' : ''}`} onClick={handleWhatsAppClick}>
+            const IconComponent = info.icon;
+            return <Card key={index} className={`shadow-lg border-0 hover:shadow-xl transition-shadow cursor-pointer p-4 sm:p-6 ${info.highlight ? 'bg-green-50 border-green-200' : ''}`} onClick={handleWhatsAppClick}>
                   <div className="flex items-center space-x-4">
                     <div className={`w-12 h-12 rounded-full flex items-center justify-center ${info.highlight ? 'bg-green-600' : 'bg-gray-100'}`}>
-                      <IconComponent className={`w-6 h-6 ${info.highlight ? 'text-white' : 'text-black'}`} />
+                      <IconComponent className={`w-6 h-6 ${info.highlight ? 'text-white' : 'text-gray-600'}`} />
                     </div>
                     <div className="flex-1">
-                      <h3 className="font-semibold text-black text-sm sm:text-base">{info.title}</h3>
-                      <p className={`font-bold text-sm sm:text-base ${info.highlight ? 'text-green-600' : 'text-black'}`}>{info.content}</p>
-                      <p className="text-xs sm:text-sm text-black">{info.subtitle}</p>
+                      <h3 className="font-semibold text-gray-900 text-sm sm:text-base">{info.title}</h3>
+                      <p className={`font-bold text-sm sm:text-base ${info.highlight ? 'text-green-600' : 'text-gray-800'}`}>{info.content}</p>
+                      <p className="text-xs sm:text-sm text-gray-600">{info.subtitle}</p>
                     </div>
                   </div>
-                </Card>
-              );
-            })}
+                </Card>;
+          })}
+
+            {/* WhatsApp Destaque */}
+            
           </div>
         </div>
 
         {/* Mapa do Google Maps */}
         <div className="bg-gray-50 rounded-2xl p-4 sm:p-8">
-          <h3 className="text-xl sm:text-2xl font-bold text-center text-black mb-4 sm:mb-6">
+          <h3 className="text-xl sm:text-2xl font-bold text-center text-gray-900 mb-4 sm:mb-6">
             Nossa Localização
           </h3>
           <div className="bg-white rounded-lg overflow-hidden shadow-lg">
-            <iframe 
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3458.076666666667!2d-53.80666668885498!3d-29.68444998202286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9501d57f7b7b7b7b%3A0x1234567890abcdef!2sRua%20Riachuelo%2C%20224%20-%20Centro%2C%20Santa%20Maria%20-%20RS%2C%2097050-010!5e0!3m2!1spt-BR!2sbr!4v1234567890123!5m2!1spt-BR!2sbr" 
-              width="100%" 
-              height="300" 
-              className="sm:h-[400px]" 
-              style={{ border: 0 }} 
-              allowFullScreen 
-              loading="lazy" 
-              referrerPolicy="no-referrer-when-downgrade" 
-              title="Localização Super Colchões" 
-            />
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3458.076666666667!2d-53.80666668885498!3d-29.68444998202286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9501d57f7b7b7b7b%3A0x1234567890abcdef!2sRua%20Riachuelo%2C%20224%20-%20Centro%2C%20Santa%20Maria%20-%20RS%2C%2097050-010!5e0!3m2!1spt-BR!2sbr!4v1234567890123!5m2!1spt-BR!2sbr" width="100%" height="300" className="sm:h-[400px]" style={{
+            border: 0
+          }} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade" title="Localização Super Colchões" />
           </div>
           <div className="text-center mt-4 sm:mt-6 space-y-2">
-            <p className="text-base sm:text-lg font-semibold text-black">
+            <p className="text-base sm:text-lg font-semibold text-gray-800">
               Rua Riachuelo, 224 - Esq. Tuiuti
             </p>
-            <p className="text-black text-sm sm:text-base">
+            <p className="text-gray-600 text-sm sm:text-base">
               Santa Maria, RS - CEP 97050-010
             </p>
-            <p className="text-xs sm:text-sm text-black">
+            <p className="text-xs sm:text-sm text-gray-500">
               Venha nos visitar! Estamos esperando você.
             </p>
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default ContactWithMap;
