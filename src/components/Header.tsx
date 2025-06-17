@@ -45,25 +45,25 @@ const Header = () => {
           <nav className="hidden lg:flex items-center space-x-8">
             <button 
               onClick={() => scrollToSection('inicio')} 
-              className="text-gray-700 hover:text-red-600 transition-colors font-medium"
+              className="text-black hover:text-green-600 hover:opacity-60 transition-colors font-medium"
             >
               Início
             </button>
             <button 
               onClick={() => scrollToSection('sobre')} 
-              className="text-gray-700 hover:text-red-600 transition-colors font-medium"
+              className="text-black hover:text-green-600 hover:opacity-60 transition-colors font-medium"
             >
               Sobre
             </button>
             <button 
               onClick={() => scrollToSection('servicos')} 
-              className="text-gray-700 hover:text-red-600 transition-colors font-medium"
+              className="text-black hover:text-green-600 hover:opacity-60 transition-colors font-medium"
             >
               Serviços
             </button>
             <button 
               onClick={() => scrollToSection('contato')} 
-              className="text-gray-700 hover:text-red-600 transition-colors font-medium"
+              className="text-black hover:text-green-600 hover:opacity-60 transition-colors font-medium"
             >
               Contato
             </button>
@@ -72,7 +72,7 @@ const Header = () => {
           {/* CTA Button Desktop */}
           <div className="hidden lg:flex">
             <Button 
-              className="bg-red-600 hover:bg-red-700 text-white px-6 py-2 flex items-center gap-2" 
+              className="bg-green-600 opacity-60 hover:bg-green-700 hover:opacity-60 text-black px-6 py-2 flex items-center gap-2" 
               onClick={handleContactClick}
             >
               <Phone className="w-4 h-4" />
@@ -83,7 +83,7 @@ const Header = () => {
           {/* Mobile menu button */}
           <button
             onClick={toggleMenu}
-            className="lg:hidden p-2 rounded-md text-gray-700 hover:bg-gray-100"
+            className="lg:hidden p-2 rounded-md text-black hover:bg-gray-100"
           >
             {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
           </button>
@@ -95,30 +95,30 @@ const Header = () => {
             <div className="flex flex-col space-y-3 pt-4">
               <button 
                 onClick={() => scrollToSection('inicio')} 
-                className="text-gray-700 hover:text-red-600 transition-colors font-medium py-2 text-left"
+                className="text-black hover:text-green-600 hover:opacity-60 transition-colors font-medium py-2 text-left"
               >
                 Início
               </button>
               <button 
                 onClick={() => scrollToSection('sobre')} 
-                className="text-gray-700 hover:text-red-600 transition-colors font-medium py-2 text-left"
+                className="text-black hover:text-green-600 hover:opacity-60 transition-colors font-medium py-2 text-left"
               >
                 Sobre
               </button>
               <button 
                 onClick={() => scrollToSection('servicos')} 
-                className="text-gray-700 hover:text-red-600 transition-colors font-medium py-2 text-left"
+                className="text-black hover:text-green-600 hover:opacity-60 transition-colors font-medium py-2 text-left"
               >
                 Serviços
               </button>
               <button 
                 onClick={() => scrollToSection('contato')} 
-                className="text-gray-700 hover:text-red-600 transition-colors font-medium py-2 text-left"
+                className="text-black hover:text-green-600 hover:opacity-60 transition-colors font-medium py-2 text-left"
               >
                 Contato
               </button>
               <Button 
-                className="bg-red-600 hover:bg-red-700 w-full mt-4 flex items-center justify-center gap-2" 
+                className="bg-green-600 opacity-60 hover:bg-green-700 hover:opacity-60 w-full mt-4 flex items-center justify-center gap-2 text-black" 
                 onClick={handleContactClick}
               >
                 <Phone className="w-4 h-4" />
