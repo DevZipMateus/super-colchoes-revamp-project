@@ -56,7 +56,7 @@ const Footer = () => {
             <h4 className="text-lg font-bold mb-4">Contato</h4>
             <div className="space-y-3">
               <div className="flex items-center space-x-3 cursor-pointer hover:text-green-800 hover:opacity-40 transition-colors" onClick={handleWhatsAppClick}>
-                <Phone className="w-5 h-5" style={{ color: '#2cf96a' }} />
+                <Phone className="w-5 h-5" style={{ color: '#000000' }} />
                 <span className="text-gray-300">(55) 3221-8035</span>
               </div>
               <div className="flex items-center space-x-3 cursor-pointer hover:text-green-400 transition-colors" onClick={handleWhatsAppClick}>
@@ -64,11 +64,11 @@ const Footer = () => {
                 <span className="text-gray-300">(55) 99163-0055</span>
               </div>
               <div className="flex items-center space-x-3 cursor-pointer hover:text-green-800 hover:opacity-40 transition-colors" onClick={handleWhatsAppClick}>
-                <Mail className="w-5 h-5" style={{ color: '#2cf96a' }} />
+                <Mail className="w-5 h-5" style={{ color: '#000000' }} />
                 <span className="text-gray-300">supercolchoes@yahoo.com.br</span>
               </div>
               <div className="flex items-start space-x-3">
-                <MapPin className="w-5 h-5 mt-1" style={{ color: '#2cf96a' }} />
+                <MapPin className="w-5 h-5 mt-1" style={{ color: '#000000' }} />
                 <span className="text-gray-300">
                   Rua Riachuelo, 224<br />
                   Esq. Tuiuti<br />

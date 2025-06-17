@@ -39,7 +39,7 @@ const TestimonialsSection = () => {
       <div className="container mx-auto px-4">
         <div className="text-center space-y-4 mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold text-gray-900">
-            O que nossos <span className="text-gray-950" style={{ color: '#2cf96a' }}>Clientes</span> dizem
+            O que nossos <span className="text-gray-950" style={{ color: '#000000' }}>Clientes</span> dizem
           </h2>
           <p className="text-xl max-w-3xl mx-auto text-gray-950">
             Depoimentos reais de clientes satisfeitos com nossos produtos e atendimento
@@ -65,7 +65,7 @@ const TestimonialsSection = () => {
                       <Star key={i} className="w-4 h-4 fill-yellow-400 text-yellow-400" />
                     ))}
                   </div>
-                  <Quote className="w-6 h-6" style={{ color: '#2cf96a' }} />
+                  <Quote className="w-6 h-6" style={{ color: '#000000' }} />
                 </div>
                 
                 <p className="text-gray-700 leading-relaxed italic">
@@ -75,7 +75,7 @@ const TestimonialsSection = () => {
                 <div className="border-t pt-4">
                   <div className="flex items-center space-x-3">
                     <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center">
-                      <span className="font-bold text-lg" style={{ color: '#2cf96a' }}>
+                      <span className="font-bold text-lg" style={{ color: '#000000' }}>
                         {testimonial.name.charAt(0)}
                       </span>
                     </div>
@@ -96,7 +96,7 @@ const TestimonialsSection = () => {
             Junte-se aos nossos clientes satisfeitos!
           </p>
           <div className="rounded-2xl p-8 max-w-2xl mx-auto bg-[#2cf96a]/20">
-            <h3 className="text-2xl font-bold mb-4 text-gray-950" style={{ color: '#2cf96a' }}>
+            <h3 className="text-2xl font-bold mb-4 text-gray-950" style={{ color: '#000000' }}>
               Garantia de Satisfação 100%
             </h3>
             <p className="text-gray-950">

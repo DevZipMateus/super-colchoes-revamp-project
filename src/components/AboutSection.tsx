@@ -7,13 +7,13 @@ const AboutSection = () => {
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto text-center space-y-8">
           <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-8">
-            <span className="text-zinc-950" style={{ color: '#2cf96a' }}>Sobre</span>
+            <span className="text-zinc-950" style={{ color: '#000000' }}>Sobre</span>
           </h2>
           
           <div className="text-xl lg:text-2xl text-gray-700 leading-relaxed space-y-6">
             <p className="text-zinc-950">
-              Há <span className="font-bold text-gray-950" style={{ color: '#2cf96a' }}>39 anos</span> cuidando do bem-estar e qualidade de vida de nossos clientes. 
-              A <span className="font-bold text-gray-950" style={{ color: '#2cf96a' }}>Super Colchões</span> investe em produtos de alta qualidade, requinte e conforto.
+              Há <span className="font-bold text-gray-950" style={{ color: '#000000' }}>39 anos</span> cuidando do bem-estar e qualidade de vida de nossos clientes. 
+              A <span className="font-bold text-gray-950" style={{ color: '#000000' }}>Super Colchões</span> investe em produtos de alta qualidade, requinte e conforto.
             </p>
             
             <p className="text-gray-950">
