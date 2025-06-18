@@ -32,28 +32,28 @@ const PaymentMethodsSection = () => {
   ];
 
   return (
-    <section className="py-8 bg-gray-50 w-full max-w-full overflow-x-hidden">
+    <section className="py-8 sm:py-12 bg-gray-50 w-full max-w-full overflow-x-hidden">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-6">
-          <h2 className="text-2xl font-bold text-primary mb-2">
+        <div className="text-center mb-6 sm:mb-8">
+          <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-primary mb-2">
             Formas de Pagamento
           </h2>
-          <p className="text-secondary">
+          <p className="text-secondary text-sm sm:text-base">
             Aceitamos diversas formas de pagamento para sua comodidade
           </p>
         </div>
         
-        <div className="flex flex-wrap justify-center items-center gap-4">
+        <div className="flex flex-wrap justify-center items-center gap-4 sm:gap-6 md:gap-8">
           {paymentMethods.map((method, index) => (
             <div
               key={index}
-              className="flex items-center justify-center bg-white rounded-lg p-3 transition-shadow duration-300"
-              style={{ minWidth: '80px', minHeight: '48px' }}
+              className="flex items-center justify-center bg-white rounded-lg p-3 sm:p-4 hover:bg-site-secondary transition-colors duration-300"
+              style={{ minWidth: '80px', minHeight: '50px' }}
             >
               <img
                 src={method.image}
                 alt={method.name}
-                className="h-6 w-auto object-contain max-w-full"
+                className="h-6 sm:h-8 md:h-10 w-auto object-contain max-w-full"
                 loading="lazy"
               />
             </div>
