@@ -10,6 +10,7 @@ import ProductCatalog from '@/components/ProductCatalog';
 import TestimonialsSection from '@/components/TestimonialsSection';
 import MapSection from '@/components/MapSection';
 import ContactWithMap from '@/components/ContactWithMap';
+import PaymentMethodsSection from '@/components/PaymentMethodsSection';
 import Footer from '@/components/Footer';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
 
@@ -28,6 +29,7 @@ const Index = () => {
         <TestimonialsSection />
         <MapSection />
         <ContactWithMap />
+        <PaymentMethodsSection />
       </main>
       <Footer />
       <FloatingWhatsApp />
