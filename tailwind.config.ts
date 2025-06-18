@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -25,13 +26,15 @@ export default {
 				background: 'hsl(var(--background))',
 				foreground: 'hsl(var(--foreground))',
 				primary: {
-					DEFAULT: 'hsl(var(--primary))',
-					foreground: 'hsl(var(--primary-foreground))'
+					DEFAULT: '#0DA456',
+					foreground: '#FFFFFF'
 				},
 				secondary: {
-					DEFAULT: 'hsl(var(--secondary))',
-					foreground: 'hsl(var(--secondary-foreground))'
+					DEFAULT: '#E0F4EA',
+					foreground: '#0DA456'
 				},
+				textPrimary: '#212121',
+				textSecondary: '#757575',
 				destructive: {
 					DEFAULT: 'hsl(var(--destructive))',
 					foreground: 'hsl(var(--destructive-foreground))'
@@ -62,6 +65,28 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				}
+			},
+			spacing: {
+				'4': '32px',
+				'6': '48px',
+				'8': '64px',
+				'12': '96px',
+				'16': '128px',
+				'20': '160px',
+				'24': '192px',
+				'32': '256px'
+			},
+			fontSize: {
+				'sm': ['14px', { lineHeight: '20px' }],
+				'base': ['16px', { lineHeight: '24px' }],
+				'lg': ['18px', { lineHeight: '28px' }],
+				'xl': ['20px', { lineHeight: '28px' }],
+				'2xl': ['24px', { lineHeight: '32px' }],
+				'3xl': ['30px', { lineHeight: '36px' }],
+				'4xl': ['36px', { lineHeight: '40px' }],
+				'5xl': ['48px', { lineHeight: '1' }],
+				'6xl': ['60px', { lineHeight: '1' }],
+				'7xl': ['72px', { lineHeight: '1' }],
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
