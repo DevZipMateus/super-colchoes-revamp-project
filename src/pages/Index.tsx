@@ -15,9 +15,9 @@ import FloatingWhatsApp from '@/components/FloatingWhatsApp';
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="min-h-screen flex flex-col w-full max-w-full overflow-x-hidden">
       <Header />
-      <main className="flex-1">
+      <main className="flex-1 w-full max-w-full">
         <HeroSection />
         <PromoImageSection />
         <AboutSection />
