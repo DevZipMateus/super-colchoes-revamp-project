@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -25,11 +26,11 @@ export default {
 				background: 'hsl(var(--background))',
 				foreground: 'hsl(var(--foreground))',
 				primary: {
-					DEFAULT: 'hsl(var(--primary))',
+					DEFAULT: 'var(--text-primary)',
 					foreground: 'hsl(var(--primary-foreground))'
 				},
 				secondary: {
-					DEFAULT: 'hsl(var(--secondary))',
+					DEFAULT: 'var(--text-secondary)',
 					foreground: 'hsl(var(--secondary-foreground))'
 				},
 				destructive: {
@@ -61,12 +62,27 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				}
+				},
+				'site-primary': 'var(--site-primary)',
+				'site-secondary': 'var(--site-secondary)',
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
 				md: 'calc(var(--radius) - 2px)',
 				sm: 'calc(var(--radius) - 4px)'
+			},
+			spacing: {
+				'8': '8px',
+				'16': '16px',
+				'24': '24px',
+				'32': '32px',
+				'40': '40px',
+				'48': '48px',
+				'56': '56px',
+				'64': '64px',
+			},
+			fontSize: {
+				'base': '16px',
 			},
 			keyframes: {
 				'accordion-down': {
