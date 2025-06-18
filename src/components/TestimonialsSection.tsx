@@ -1,5 +1,7 @@
 import { Card, CardContent } from '@/components/ui/card';
-import { Star, Quote } from 'lucide-react';
+import { Button } from '@/components/ui/button';
+import { Star, Quote, ExternalLink } from 'lucide-react';
+
 const TestimonialsSection = () => {
   const testimonials = [{
     name: "Hemely Cassol",
@@ -26,7 +28,8 @@ const TestimonialsSection = () => {
     rating: 5,
     text: "Excelente como sempre. Adquiri um Colchão King com baú. Baú espaçoso e materiais de primeira linha. Colchão muito confortável. Recomendo 100%. A durabilidade dos produtos são incríveis. Produtos da Super Colchões são de extrema qualidade. Vale muito a pena."
   }];
-  return <section className="py-12 sm:py-16 lg:py-20 xl:py-24 2xl:py-32 bg-white">
+  return (
+    <section className="py-12 sm:py-16 lg:py-20 xl:py-24 2xl:py-32 bg-white">
       <div className="container mx-auto px-4 max-w-7xl">
         <div className="text-center space-y-4 sm:space-y-6 xl:space-y-8 mb-12 sm:mb-16 xl:mb-20 2xl:mb-24">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-bold text-gray-900">
@@ -82,7 +85,15 @@ const TestimonialsSection = () => {
             </Card>)}
         </div>
 
-        <div className="text-center mt-12 xl:mt-16 2xl:mt-20">
+        <div className="text-center mt-12 sm:mt-16 xl:mt-20">
+          <Button
+            onClick={() => window.open('https://www.google.com/search?q=super+colch%C3%B5es&oq=super+colch%C3%B5es&aqs=chrome..69i57j35i39j0i22i30l3j69i60j69i61l2.4320j1j4&sourceid=chrome&ie=UTF-8#lrd=0x9503cb6afb0b59b3:0x5e1f0cbaa2dfe89,1,,,', '_blank')}
+            className="mb-8 xl:mb-12 flex items-center gap-2 text-lg xl:text-xl px-8 py-4"
+          >
+            Ver mais comentários
+            <ExternalLink className="w-5 h-5" />
+          </Button>
+
           <p className="text-lg xl:text-xl 2xl:text-2xl text-gray-600 mb-6 xl:mb-8">
             Junte-se aos nossos clientes satisfeitos!
           </p>
@@ -98,6 +109,8 @@ const TestimonialsSection = () => {
           </div>
         </div>
       </div>
-    </section>;
+    </section>
+  );
 };
+
 export default TestimonialsSection;
