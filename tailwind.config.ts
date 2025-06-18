@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -17,21 +18,57 @@ export default {
 				'2xl': '1400px'
 			}
 		},
+		spacing: {
+			'0': '0px',
+			'1': '8px',
+			'2': '16px',
+			'3': '24px',
+			'4': '32px',
+			'5': '40px',
+			'6': '48px',
+			'7': '56px',
+			'8': '64px',
+			'9': '72px',
+			'10': '80px',
+			'11': '88px',
+			'12': '96px',
+			'14': '112px',
+			'16': '128px',
+			'20': '160px',
+			'24': '192px',
+			'28': '224px',
+			'32': '256px',
+			'36': '288px',
+			'40': '320px',
+			'44': '352px',
+			'48': '384px',
+			'52': '416px',
+			'56': '448px',
+			'60': '480px',
+			'64': '512px',
+			'72': '576px',
+			'80': '640px',
+			'96': '768px',
+		},
 		extend: {
 			colors: {
+				primary: {
+					DEFAULT: '#0DA456',
+					foreground: '#FFFFFF'
+				},
+				secondary: {
+					DEFAULT: '#E0F4EA',
+					foreground: '#0DA456'
+				},
+				text: {
+					primary: '#212121',
+					secondary: '#757575'
+				},
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
 				ring: 'hsl(var(--ring))',
 				background: 'hsl(var(--background))',
 				foreground: 'hsl(var(--foreground))',
-				primary: {
-					DEFAULT: 'hsl(var(--primary))',
-					foreground: 'hsl(var(--primary-foreground))'
-				},
-				secondary: {
-					DEFAULT: 'hsl(var(--secondary))',
-					foreground: 'hsl(var(--secondary-foreground))'
-				},
 				destructive: {
 					DEFAULT: 'hsl(var(--destructive))',
 					foreground: 'hsl(var(--destructive-foreground))'
@@ -62,6 +99,9 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				}
+			},
+			fontSize: {
+				'p': '16px'
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
