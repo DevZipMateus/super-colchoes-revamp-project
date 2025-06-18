@@ -25,34 +25,34 @@ const ServicesSection = () => {
   ];
 
   return (
-    <section className="py-16 bg-gradient-to-br from-gray-50 to-white">
+    <section className="py-12 bg-gradient-to-br from-gray-50 to-white">
       <div className="container mx-auto px-4">
-        <div className="text-center spacing-lg mb-12">
-          <h2 className="text-4xl font-bold text-textPrimary mb-8">
+        <div className="text-center space-y-4 mb-8">
+          <h2 className="text-3xl font-bold text-textPrimary">
             Nossos Serviços
           </h2>
           
-          <p className="text-lg text-textSecondary max-w-4xl mx-auto leading-relaxed">
+          <p className="text-base text-textSecondary max-w-3xl mx-auto leading-relaxed">
             Oferecemos serviços diferenciados para garantir a melhor experiência na compra do seu colchão
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
           {services.map((service, index) => {
             const IconComponent = service.icon;
             return (
               <Card key={index} className="hover:shadow-xl transition-all duration-300 border-0 shadow-lg group h-full hover:scale-105">
-                <CardHeader className="text-center pb-4 p-8">
-                  <div className="w-16 h-16 mx-auto mb-6 rounded-full bg-secondary flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                    <IconComponent className="w-8 h-8 text-primary" />
+                <CardHeader className="text-center pb-3 p-6">
+                  <div className="w-14 h-14 mx-auto mb-4 rounded-full bg-secondary flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                    <IconComponent className="w-7 h-7 text-primary" />
                   </div>
-                  <CardTitle className="text-xl font-bold text-textPrimary leading-tight">
+                  <CardTitle className="text-lg font-bold text-textPrimary leading-tight">
                     {service.title}
                   </CardTitle>
                 </CardHeader>
                 
-                <CardContent className="text-center flex-1 p-8 pt-0">
-                  <p className="text-textSecondary leading-relaxed text-base">
+                <CardContent className="text-center flex-1 p-6 pt-0">
+                  <p className="text-textSecondary leading-relaxed text-sm">
                     {service.description}
                   </p>
                 </CardContent>
@@ -62,11 +62,11 @@ const ServicesSection = () => {
         </div>
 
         <div className="text-center">
-          <div className="bg-white/80 backdrop-blur-sm rounded-xl p-8 shadow-lg max-w-4xl mx-auto">
-            <h3 className="text-2xl font-semibold text-textPrimary mb-4">
+          <div className="bg-white/80 backdrop-blur-sm rounded-xl p-6 shadow-lg max-w-3xl mx-auto">
+            <h3 className="text-xl font-semibold text-textPrimary mb-3">
               Atendimento diferenciado há 39 anos
             </h3>
-            <p className="text-lg text-textSecondary leading-relaxed">
+            <p className="text-base text-textSecondary leading-relaxed">
               Sua satisfação é nossa prioridade. Entre em contato e descubra como podemos ajudá-lo!
             </p>
           </div>

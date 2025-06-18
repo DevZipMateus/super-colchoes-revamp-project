@@ -32,28 +32,28 @@ const PaymentMethodsSection = () => {
   ];
 
   return (
-    <section className="py-16 bg-gray-50 w-full max-w-full overflow-x-hidden">
+    <section className="py-12 bg-gray-50 w-full max-w-full overflow-x-hidden">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold text-textPrimary mb-4">
+        <div className="text-center mb-8">
+          <h2 className="text-2xl font-bold text-textPrimary mb-3">
             Formas de Pagamento
           </h2>
-          <p className="text-base text-textSecondary max-w-2xl mx-auto">
+          <p className="text-sm text-textSecondary max-w-2xl mx-auto">
             Aceitamos diversas formas de pagamento para sua comodidade
           </p>
         </div>
         
-        <div className="flex flex-wrap justify-center items-center gap-8">
+        <div className="flex flex-wrap justify-center items-center gap-6">
           {paymentMethods.map((method, index) => (
             <div
               key={index}
-              className="flex items-center justify-center bg-white rounded-lg p-6 hover:shadow-md transition-shadow duration-300"
-              style={{ minWidth: '120px', minHeight: '80px' }}
+              className="flex items-center justify-center bg-white rounded-lg p-4 hover:shadow-md transition-shadow duration-300"
+              style={{ minWidth: '100px', minHeight: '64px' }}
             >
               <img
                 src={method.image}
                 alt={method.name}
-                className="h-10 w-auto object-contain max-w-full"
+                className="h-8 w-auto object-contain max-w-full"
                 loading="lazy"
               />
             </div>

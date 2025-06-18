@@ -13,7 +13,7 @@ export default {
 	theme: {
 		container: {
 			center: true,
-			padding: '2rem',
+			padding: '1rem',
 			screens: {
 				'2xl': '1400px'
 			}
@@ -67,26 +67,26 @@ export default {
 				}
 			},
 			spacing: {
-				'4': '32px',
-				'6': '48px',
-				'8': '64px',
-				'12': '96px',
-				'16': '128px',
-				'20': '160px',
-				'24': '192px',
-				'32': '256px'
+				'4': '16px',
+				'6': '24px',
+				'8': '32px',
+				'12': '48px',
+				'16': '64px',
+				'20': '80px',
+				'24': '96px',
+				'32': '128px'
 			},
 			fontSize: {
 				'sm': ['14px', { lineHeight: '20px' }],
 				'base': ['16px', { lineHeight: '24px' }],
-				'lg': ['18px', { lineHeight: '28px' }],
+				'lg': ['18px', { lineHeight: '26px' }],
 				'xl': ['20px', { lineHeight: '28px' }],
-				'2xl': ['24px', { lineHeight: '32px' }],
-				'3xl': ['30px', { lineHeight: '36px' }],
-				'4xl': ['36px', { lineHeight: '40px' }],
-				'5xl': ['48px', { lineHeight: '1' }],
-				'6xl': ['60px', { lineHeight: '1' }],
-				'7xl': ['72px', { lineHeight: '1' }],
+				'2xl': ['22px', { lineHeight: '30px' }],
+				'3xl': ['26px', { lineHeight: '32px' }],
+				'4xl': ['30px', { lineHeight: '36px' }],
+				'5xl': ['36px', { lineHeight: '40px' }],
+				'6xl': ['42px', { lineHeight: '46px' }],
+				'7xl': ['48px', { lineHeight: '52px' }],
 			},
 			borderRadius: {
 				lg: 'var(--radius)',

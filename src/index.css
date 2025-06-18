@@ -114,34 +114,34 @@
     min-height: 100vh;
   }
 
-  /* Tipografia padronizada */
+  /* Tipografia padronizada - valores reduzidos */
   h1 {
-    @apply text-4xl font-bold text-textPrimary mb-6;
-  }
-
-  h2 {
     @apply text-3xl font-bold text-textPrimary mb-4;
   }
 
+  h2 {
+    @apply text-2xl font-bold text-textPrimary mb-4;
+  }
+
   h3 {
-    @apply text-2xl font-semibold text-textPrimary mb-4;
+    @apply text-xl font-semibold text-textPrimary mb-3;
   }
 
   h4 {
-    @apply text-xl font-semibold text-textPrimary mb-3;
+    @apply text-lg font-semibold text-textPrimary mb-2;
   }
 
   p {
     @apply text-base text-textSecondary leading-relaxed mb-4;
   }
 
-  /* Espaçamentos padronizados */
+  /* Espaçamentos padronizados - valores reduzidos */
   section {
-    @apply py-16;
+    @apply py-12;
   }
 
   .container {
-    @apply px-4 max-w-7xl mx-auto;
+    @apply px-4 max-w-6xl mx-auto;
   }
 }
 
@@ -193,10 +193,10 @@
     max-width: 100%;
   }
 
-  /* Classes para espaçamento padronizado */
+  /* Classes para espaçamento padronizado - valores reduzidos */
   .spacing-xs { @apply space-y-2; }
-  .spacing-sm { @apply space-y-4; }
-  .spacing-md { @apply space-y-6; }
-  .spacing-lg { @apply space-y-8; }
-  .spacing-xl { @apply space-y-12; }
+  .spacing-sm { @apply space-y-3; }
+  .spacing-md { @apply space-y-4; }
+  .spacing-lg { @apply space-y-6; }
+  .spacing-xl { @apply space-y-8; }
 }
